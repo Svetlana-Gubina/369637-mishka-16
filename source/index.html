@@ -8,35 +8,34 @@
     <body>
       <header class="page-header">
           <a class="logo page-header__logo"><img class="page-header__logo-image" src="http://placehold.it/150x100" width="86" height="35" alt="Логотип 'Мишка'"></a>
-          <nav class="main-nav">
-              <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <button class="main-nav__toggle" type="button">Открыть/Закрыть меню</button>
+          <nav class="main-nav visually-hidden">
               <div class="main-nav__wrapper">
                 <ul class="main-nav__list site-list">
-                    <li class="site-list__item"><a href="catalog.html">Каталог товаров</a></li>
-                    <li class="site-list__item"><a href="order.html">Вязание на заказ</a></li>
-                    <li class="site-list__item"><a href="cart.html">Корзина: пока пуста</a></li>
+                    <li class="site-list__item"><a class="site-list__link" href="catalog.html">Каталог товаров</a></li>
+                    <li class="site-list__item"><a class="site-list__link" href="order.html">Вязание на заказ</a></li>
+                    <li class="site-list__item"><a class="site-list__link" href="cart.html">Корзина: пока пуста</a></li>
                     <li class="site-list__item">
                       <form class="site-list__form" action="https://echo.htmlacademy.ru" method="GET">
                         <label class="visually-hidden" for="search-field">Поиск по сайту</label>
-                        <input id="search-field" type="search" placeholder="Поиск по сайту">
+                        <input class="site-list__form-input" id="search-field" type="search" placeholder="Поиск по сайту">
                       </form>
                     </li>
                 </ul>
-                <button class="btn-close" type="button">Закрыть</button>
               </div>
           </nav>
       </header>
       <main class="page-main">
-          <h1 class="page-main__title">Милые штуки ручной
+          <h1 class="page-main__title">Милые штуки ручной<br>
               работы для дома
           </h1>
           <section class="product-types">
               <h2 class="visually-hidden">Типы продукции</h2>
               <ul class="product-types__list">
-                  <li class="product-types__item">Предметы
+                  <li class="product-types__item product-types__item-accessories">Предметы
                       интерьера
                   </li>
-                  <li class="product-types__item">Детские
+                  <li class="product-types__item product-types__item-toys">Детские
                       игрушки
                   </li>
               </ul>
@@ -50,15 +49,15 @@
               </p>
               <table class="promo__table">
                   <tr>
-                      <th class="promo__table-field">Цвет:</th>
+                      <td class="promo__table-field">Цвет:</td>
                       <td class="promo__table-field">«Тиффани»/серый</td>
                   </tr>
                   <tr>
-                      <th class="promo__table-field">Диаметр:</th>
+                      <td class="promo__table-field">Диаметр:</td>
                       <td class="promo__table-field">25 см</td>
                   </tr>
                   <tr>
-                      <th class="promo__table-field">Высота:</th>
+                      <td class="promo__table-field">Высота:</td>
                       <td class="promo__table-field">15 см</td>
                   </tr>
               </table>
@@ -105,17 +104,21 @@
           </section>
           <section class="contacts section">
               <h2 class="contacts__title">Контакты</h2>
-              <div class="contacts__wrapper">
-                  <p class="contacts__text">e-mail:</p>
-                  <p class="contacts__text contacts__text-info">info@mimimishkashop.ru</p>
-                  <p class="contacts__text">адрес:</p>
-                  <p class="contacts__text contacts__text-info">
-                      г. Санкт-Петербург,<br>
+              <table class="contacts__wrapper">
+                <tr>
+                  <td class="contacts__text">e-mail:</td>
+                  <td class="contacts__text contacts__text-info">info@mimimishkashop.ru</td>
+                </tr>
+                <tr>
+                    <td class="contacts__text">адрес:</td>
+                    <td class="contacts__text contacts__text-info">г. Санкт-Петербург,<br>
                       ул. Большая<br> Конюшенная,<br>
-                      д. 19/8, офис 101
-                  </p>
+                      д. 19/8, офис 101</td>
+                </tr>
+              </table>
+              <div class="contacts__map">
+                  <img class="contacts__map-image" src="http://placehold.it/150x100" width="322" height="457" alt="Карта проезда">
               </div>
-              <img class="contacts__map" src="http://placehold.it/150x100" width="322" height="457" alt="Карта проезда">
               <button class="contacts__button button" type="button">Напишите нам</button>
           </section>
       </main>

@@ -29,7 +29,7 @@
   width: 100%;
   box-sizing: border-box;
 
-  .flex-column;
+  /*.flex-column;*/
 }
 
 .modal__fieldset {
@@ -67,7 +67,7 @@
 }
 
 .modal__form-label {
-  color: #444444;
+  color: @text-color;
   font-size: 17px;
   /*font-size: 1.13333333rem;*/
   font-weight: 700;
@@ -87,7 +87,7 @@
 .modal__form-input:first-child:checked ~ .modal__form-label[for="S"],
 .modal__form-input:nth-of-type(2):checked ~ .modal__form-label[for="M"],
 .modal__form-input:nth-of-type(3):checked ~ .modal__form-label[for="L"] {
-  border-color: #63d1bb;
+  border-color: @base-color;
 }
 
 .modal__form-button {
@@ -97,5 +97,5 @@
 
   color: #ffffff;
   border: none;
-  background-color: #63d1bb;
+  background-color: @base-color;
 }
