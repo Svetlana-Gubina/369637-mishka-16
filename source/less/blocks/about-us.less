@@ -1,0 +1,35 @@
+.about-us {
+  width: 100%;
+  margin-bottom: 12.5%;
+}
+
+.about-us__list {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about-us__item {
+  position: relative;
+  width: 100%;
+  font-size: 17px;
+  /*font-size: 1.13333333rem;*/
+  font-weight: 700;
+  line-height: 1.2;
+
+  margin-bottom: 12%;
+  padding-top: 20%;
+}
+
+.about-us__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 34px;
+  border-radius: 50%; // временно для сетки
+
+  background-color: @base-color;
+}
