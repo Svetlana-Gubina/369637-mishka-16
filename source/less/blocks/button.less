@@ -3,13 +3,31 @@
   font-size: 18px;
   /*font-size: 1.2rem;*/
   font-weight: 700;
-  line-height: 1.11111111em;
+  line-height: 1.1;
   text-transform: uppercase;
   text-align: center;
 
-  padding-top: 1.11111111em;
-  padding-bottom: 1.11111111em;
+  padding-top: 1.11111em;
+  padding-bottom: 1.1111em;
 
   border: 2px solid @text-color;
   background-color: #ffffff;
+
+  &-hover,
+  &:hover {
+    color: #ffffff;
+    background-color: @text-color;
+  }
+
+  &-focus,
+  &:focus {
+    color: #ffffff;
+    background-color: @text-color;
+  }
+
+  &-active,
+  &:active {
+    color: rgba(255, 255, 255, 0.5);
+    background-color: @text-color;
+  }
 }
