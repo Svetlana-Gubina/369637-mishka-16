@@ -5,31 +5,91 @@
 
 .about-us__list {
   width: 100%;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  .list;
 }
 
 .about-us__item {
-  position: relative;
   width: 100%;
   font-size: 17px;
-  /*font-size: 1.13333333rem;*/
   font-weight: 700;
   line-height: 1.2;
 
   margin-bottom: 12%;
-  padding-top: 20%;
 }
 
-.about-us__item::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 35px;
-  height: 34px;
-  border-radius: 50%; // временно для сетки
+@media screen and (min-width: @tablet-width) {
+  .about-us {
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-right: 6%;
+    padding-left: 6%;
+  }
 
-  background-color: @base-color;
+  .about-us__title {
+    font-size: 43px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 6%;
+  }
+
+  .about-us__list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .about-us__item {
+    max-width: 40%;
+  }
+
+  .about-us__item--style {
+    order: 3;
+  }
+
+  .about-us__item--likes {
+    order: 5;
+  }
+
+  .about-us__item--handmade {
+    order: 2;
+  }
+
+  .about-us__item--supp {
+    order: 4;
+  }
+}
+
+.about-us__icon {
+  display: block;
+  padding: 0.9em;
+}
+
+.about-us__icon path {
+  fill: #63d1bb;
+}
+
+@media screen and (min-width: @desktop-width) {
+  .about-us {
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    padding-right: 30%;
+    padding-left: 15.65%;
+  }
+
+  .about-us__title {
+    font-size: 53px;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  .about-us__item {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
+  }
 }
