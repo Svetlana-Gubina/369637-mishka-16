@@ -1,5 +1,21 @@
 .wrapper {
-  width: 320px;
+  width: @mobile-width;
   margin: 0 auto;
   padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    width: @tablet-width;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .wrapper {
+    width: @desktop-width;
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+    background-color: #ffffff;
+    box-sizing: border-box;
+  }
 }
