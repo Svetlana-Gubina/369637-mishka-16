@@ -4,7 +4,7 @@
 
   .flex-column;
 
-  background-color: #f1f1f1;
+  background-color: @icon-grey-color;
 }
 
 .page-footer__container {
@@ -16,14 +16,133 @@
 
 .social__list {
   .list;
+  margin: auto;
+  font-size: 0;
+
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .copyright__text {
+  display: flex;
+
+  margin: auto;
   margin-bottom: 5px;
 
   color: #000000;
   font-size: 19px;
-  /*font-size: 1.26666667rem;*/
   font-weight: 700;
   line-height: 1;
+}
+
+.logo-cont,
+.page-footer__logo {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .page-footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 6.5%;
+    padding-left: 6.5%;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    box-sizing: border-box;
+  }
+
+  .page-footer__container {
+    padding: 0;
+    max-width: 33.33%;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .page-footer {
+    padding: 4%;
+    padding-top: 8%;
+    box-sizing: border-box;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .page-footer__container {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-footer__logo {
+    margin: auto;
+
+    width: 102px;
+    height: 34px;
+  }
+
+  .logo-cont {
+    display: flex;
+    margin-right: 7.8125%;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .page-footer__logo {
+    margin: auto;
+
+    width: 102px;
+    height: 34px;
+  }
+
+  .logo-cont {
+    display: flex;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .social__list {
+    padding-top: 1%;
+    height: 45px;
+    width: 144px; /* времено для сетки!!!!!!!!!!!*/
+  }
+}
+
+.copyright__link {
+  margin-left: 10%;
+  vertical-align: middle;
+}
+
+.copyright__link-icon {
+  fill: @base-color;
+
+  &-hover,
+  &:hover {
+    fill: @hover-color;
+  }
+
+  &-focus,
+  &:focus {
+    fill: @hover-color;
+  }
+
+  &-active,
+  &:active {
+    fill: @hover-color;
+    opacity: 0.3;
+  }
+}
+
+.social-button-icon:hover path,
+.social-button-icon:focus path {
+  fill: @hover-color;
+}
+
+.social-button-icon:active path {
+  fill: @hover-color;
+  opacity: 0.3;
 }

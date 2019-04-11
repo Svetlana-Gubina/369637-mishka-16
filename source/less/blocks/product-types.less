@@ -3,17 +3,19 @@
 
   color: #ffffff;
   font-size: 19px;
-  /*font-size: 1.26666667rem*/
   font-weight: 700;
   line-height: 1.2;
 }
 
 .product-types__item {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 100%;
   box-sizing: border-box;
   padding-top: 8%;
-  padding-bottom: 9%;
+  padding-bottom: 8%;
   padding-left: 9.375%;
-  padding-right: 183px;
+  padding-right: 8%;
 }
 
 .product-types__item-accessories {
@@ -22,4 +24,55 @@
 
 .product-types__item-toys {
   background-color: @dark-base;
+}
+
+.product-types__span {
+  padding-left: 50%;
+}
+
+.product-types__icon path {
+  fill: @icon-color;
+}
+
+@media screen and (min-width: @tablet-width) {
+  .product-types {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  .product-types__list {
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .product-types__item {
+    width: 49%;
+    box-sizing: border-box;
+    flex-grow: 1;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-right: 20%;
+  }
+}
+
+@media screen and (min-width: @desktop-width) {
+  .product-types {
+    padding-right: 2%;
+    padding-left: 2%;
+  }
+
+  .product-types__item {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
 }
