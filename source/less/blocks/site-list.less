@@ -4,7 +4,6 @@
   list-style: none;
 
   font-size: 17px;
-  /*font-size: 1.13333333rem;*/
   font-weight: 700;
   line-height: 1.4;
 }
@@ -13,16 +12,57 @@
   display: block;
   color: #000000;
 
-  padding-top: 8%;
-  padding-bottom: 8%;
+  padding: 8%;
   padding-left: 10%;
 
   text-align: left;
   text-decoration: none;
+
+  &-hover,
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &-focus,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &-active,
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .site-list__item {
-  box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+  box-shadow: 0 1px 0 @grey-color, inset 0 1px 0 @grey-color;
+}
+
+.site-list__item-new,
+.site-list__item-sale {
+  display: none;
+}
+
+.site-list__cart-icon {
+  fill: @icon-grey-color;
+  opacity: 0.2;
+  padding: 10px;
+
+  &-hover path,
+  &:hover path {
+    fill: @base-color;
+  }
+
+  &-focus path,
+  &:focus path {
+    fill: @base-color;
+  }
+
+  &-active path,
+  &:active path {
+    fill: @base-color;
+    opacity: 0.3;
+  }
 }
 
 .site-list__form-input {
@@ -32,6 +72,83 @@
   padding-bottom: 8%;
   padding-left: 10%;
   border: none;
-  border-top: 1px solid #ececec;
+  border-top: 1px solid @grey-color;
   box-sizing: border-box;
+}
+
+@media screen and (min-width: @tablet-width) {
+  .site-list__item {
+    min-width: 10%;
+  }
+
+  .site-list__item-cat {
+    position: absolute;
+    top: 140%;
+    left: 6%;
+    box-shadow: none;
+  }
+
+  .site-list__item-order {
+    position: absolute;
+    top: 140%;
+    left: 25%;
+    box-shadow: none;
+  }
+
+  .site-list__item-cart {
+    width: 25%; //временно для сетки
+
+    position: absolute;
+    top: 0;
+    right: 6%;
+    margin-left: auto;
+    box-shadow: none;
+  }
+
+  .site-list__form {
+    position: absolute;
+    top: 0;
+    right: 35%;
+    width: 90px; //временно для сетки
+    height: 90px;
+    font-size: 0;
+  }
+
+  .site-list__form-input {
+    width: 90px; //временно для сетки
+    height: 90px;
+  }
+}
+
+@media screen and (min-width: @desktop-width) {
+  .site-list__item-new {
+    display: block;
+    position: absolute;
+    top: 140%;
+    left: 0;
+    box-shadow: none;
+  }
+
+  .site-list__item-sale {
+    display: block;
+    position: absolute;
+    top: 145%;
+    left: 25%;
+    box-shadow: none;
+  }
+
+  .site-list__item-cat {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    box-shadow: none;
+  }
+
+  .site-list__item-order {
+    position: absolute;
+    top: 0;
+    left: 200px;
+    box-shadow: none;
+  }
 }
