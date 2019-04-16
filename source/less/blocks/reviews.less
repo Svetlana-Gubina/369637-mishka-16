@@ -56,18 +56,23 @@
 }
 
 .reviews__toggles {
+  display: flex;
   width: 100%;
   margin-bottom: 15%;
   font-size: 0;
 }
 
 .reviews__toggle {
-  display: inline-block;
+  display: flex;
   box-sizing: border-box;
   font-size: 0;
   width: 49%;
   height: 52px;
   border: 1px solid @grey-color;
+}
+
+.reviews__toggle-icon {
+  margin: auto;
 }
 
 @media screen and (min-width: @tablet-width) {
