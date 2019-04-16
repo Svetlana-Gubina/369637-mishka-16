@@ -4,23 +4,6 @@
   padding: 0;
 }
 
-@media screen and (min-width: @desktop-width) {
-  .contacts {
-    display: block;
-    padding-bottom: 6%;
-    padding-right: 4%;
-    padding-left: 14%;
-    padding-top: 10%;
-    box-sizing: border-box;
-  }
-
-  .contacts::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-}
-
 .contacts__title {
   flex-basis: 100%;
   margin-left: 9.375%;
@@ -35,6 +18,72 @@
 
 .contacts__title-icon {
   display: none;
+}
+
+.contacts__wrapper {
+  width: 100%;
+  box-sizing: border-box;
+  color: @text-color;
+  margin: 0;
+  margin-bottom: 12.5%;
+  padding-left: 9%;
+  padding-right: 9%;
+}
+
+.contacts__text {
+  margin: 0;
+  padding: 0;
+  padding-left: 5px;
+  padding-top: 12px;
+  vertical-align: top;
+  text-align: left;
+  font-weight: 400;
+  line-height: 2;
+}
+
+.contacts__text-info {
+  max-width: 75%;
+  padding-left: 15px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.contacts__map {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10%;
+}
+
+.contacts__map-image {
+  width: 100%;
+  height: 457px;
+}
+
+.contacts__button {
+  margin: 0 auto;
+  margin-bottom: 10%;
+  padding-top: 0.9em;
+  padding-bottom: 0.9em;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+@media screen and (min-width: @tablet-width) and (max-width: 800px) {
+  .contacts__wrapper {
+    display: flex;
+    flex: 1 1 auto;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 2%;
+
+    padding-left: 5%;
+    padding-right: 7%;
+  }
+
+  tbody {
+    display: flex;
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: @tablet-width) {
@@ -56,6 +105,28 @@
     width: 47px;
     height: 81px;
   }
+
+  .contacts__text {
+    font-size: 17px;
+    line-height: 1.7;
+    padding: 1.4166em;
+    padding-top: 2.125em;
+  }
+
+  .contacts__text-info:last-child {
+    width: 28.5%;
+    padding-right: 0;
+  }
+
+  .contacts__map {
+    margin-bottom: 7%;
+  }
+
+  .contacts__button {
+    font-size: 17px;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
 }
 
 @media screen and (min-width: @desktop-width) {
@@ -74,36 +145,7 @@
     top: -15%;
     left: -40%;
   }
-}
 
-.contacts__wrapper {
-  width: 100%;
-  box-sizing: border-box;
-  margin: 0;
-  margin-bottom: 12.5%;
-  padding-left: 9%;
-  padding-right: 9%;
-}
-
-@media screen and (min-width: @tablet-width) and (max-width: 800px) {
-  .contacts__wrapper {
-    display: flex;
-    flex: 1 1 auto;
-    width: 100%;
-    box-sizing: border-box;
-    margin-bottom: 2%;
-
-    padding-left: 5%;
-    padding-right: 7%;
-  }
-
-  tbody {
-    display: flex;
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: @desktop-width) {
   .contacts__wrapper {
     width: 200px;
     height: 12.17%;
@@ -114,41 +156,7 @@
 
     padding: 0;
   }
-}
 
-.contacts__text {
-  margin: 0;
-  padding: 0;
-  padding-left: 5px;
-  padding-top: 12px;
-  vertical-align: top;
-  text-align: left;
-  font-weight: 400;
-  line-height: 2;
-}
-
-.contacts__text-info {
-  max-width: 75%;
-  padding-left: 15px;
-  text-align: left;
-  vertical-align: top;
-}
-
-@media screen and (min-width: @tablet-width) {
-  .contacts__text {
-    font-size: 17px;
-    line-height: 1.7;
-    padding: 1.4166em;
-    padding-top: 2.125em;
-  }
-
-  .contacts__text-info:last-child {
-    width: 28.5%;
-    padding-right: 0;
-  }
-}
-
-@media screen and (min-width: @desktop-width) {
   .contacts__text {
     font-size: 17px;
     line-height: 1.7;
@@ -158,26 +166,22 @@
   .contacts__text-info:last-child {
     padding: 0;
   }
-}
 
-.contacts__map {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 10%;
-}
-
-.contacts__map-image {
-  width: 100%;
-  height: 457px;
-}
-
-@media screen and (min-width: @tablet-width) {
-  .contacts__map {
-    margin-bottom: 7%;
+  .contacts {
+    display: block;
+    padding-bottom: 6%;
+    padding-right: 4%;
+    padding-left: 14%;
+    padding-top: 10%;
+    box-sizing: border-box;
   }
-}
 
-@media screen and (min-width: @desktop-width) {
+  .contacts::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
   .contacts__map {
     margin-top: -15.65%;
     float: right;
@@ -187,26 +191,7 @@
     width: 525px;
     height: 457px;
   }
-}
 
-.contacts__button {
-  margin: 0 auto;
-  margin-bottom: 10%;
-  padding-top: 0.9em;
-  padding-bottom: 0.9em;
-  padding-left: 3em;
-  padding-right: 3em;
-}
-
-@media screen and (min-width: @tablet-width) {
-  .contacts__button {
-    font-size: 17px;
-    padding-left: 2em;
-    padding-right: 2em;
-  }
-}
-
-@media screen and (min-width: @desktop-width) {
   .contacts__button {
     float: left;
     margin-left: 5%;
