@@ -1,0 +1,161 @@
+.production {
+  .flex-column;
+  width: 81.25%;
+  box-sizing: border-box;
+  margin: auto;
+  margin-bottom: 10%;
+  padding: 0;
+  border: 1px solid @grey-color;
+}
+
+.production__button {
+  margin: 0 auto;
+
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.9em;
+  padding-bottom: 0.9em;
+  box-sizing: border-box;
+  font-size: 17px;
+  text-decoration: none;
+
+  margin-bottom: 10%;
+}
+
+.production__title {
+  margin: 0;
+
+  padding-left: 34.6153%;
+  padding-right: 15.3846%;
+  padding-top: 11.5384%;
+  padding-bottom: 11.5384%;
+
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.production__video {
+  width: 100%;
+  margin-bottom: 8%;
+}
+
+.production__text {
+  width: 70.3846%;
+  margin: 0 auto;
+  margin-bottom: 10%;
+  padding: 0;
+  color: @text-color;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+.production__icon path {
+  fill: @base-color;
+}
+
+@media screen and (min-width: @tablet-width) {
+  .production {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  .production__title {
+    order: 2;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
+
+    padding-top: 1.5em;
+    padding-left: 2.5em;
+  }
+
+  .production__video {
+    order: 1;
+    width: 100%;
+    height: 455px;
+    margin-bottom: 0;
+  }
+
+  .production__text {
+    order: 3;
+    color: @text-color;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 2;
+  }
+
+  .production__span {
+    margin-bottom: -2%;
+    margin-right: 2%;
+  }
+
+  .production__button {
+    order: 4;
+    width: 90%;
+    margin: 0 auto;
+    text-decoration: none;
+
+    margin-bottom: 4%;
+
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1;
+  }
+}
+
+@media screen and (min-width: @desktop-width) {
+  .production {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+
+  .production__video {
+    order: 1;
+    width: 60%;
+    height: 455px;
+    margin: 0;
+  }
+
+  .production__title {
+    float: right;
+    width: 12.86%;
+    margin: 0;
+    margin-bottom: 2%;
+    padding: 0;
+    padding-top: 4%;
+    padding-left: 6%;
+    padding-right: 20%;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  .production__span {
+    display: block;
+    padding-bottom: 10%;
+  }
+
+  .production__text {
+    width: 20%;
+    margin: 0;
+    padding: 0;
+    padding-left: 6%;
+    padding-right: 12.5%;
+    margin-top: -26%;
+    float: right;
+    color: @text-color;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 2;
+  }
+
+  .production__button {
+    width: 20%;
+    float: right;
+    margin-top: -10%;
+    margin-right: 12.5%;
+  }
+}
