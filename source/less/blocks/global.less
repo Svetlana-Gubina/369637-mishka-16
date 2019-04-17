@@ -15,11 +15,15 @@
 body {
   display: flex;
   min-width: @mobile-width;
-  margin: 0;
-  padding: 0;
+  .indent();
 
-  color: #000000;
+  color: @black-color;
   font-size: 15px;
   font-family: "Open Sans", "Arial", sans-serif;
   line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
