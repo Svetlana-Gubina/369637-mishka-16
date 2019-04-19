@@ -1,21 +1,13 @@
 .wrapper {
-  width: @mobile-width;
+  width: 100%;
   margin: 0 auto;
   padding: 0;
 }
 
-@media screen and (min-width: 768px) {
-  .wrapper {
-    width: @tablet-width;
-  }
-}
-
-@media screen and (min-width: 1250px) {
+@media screen and (min-width: @desktop-width) {
   .wrapper {
     width: @desktop-width;
-    padding-left: 3.5%;
-    padding-right: 3.5%;
-    background-color: #ffffff;
+    background-color: @white-color;
     box-sizing: border-box;
   }
 }

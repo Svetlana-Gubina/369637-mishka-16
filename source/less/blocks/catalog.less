@@ -14,6 +14,10 @@
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+.catalog__span {
+  top: 2%;
+}
+
 .catalog__list {
   .list;
   .flex-column;
@@ -22,11 +26,26 @@
 .catalog__item {
   .flex-column;
   margin-bottom: 10%;
-
   border: 1px solid @grey-color;
+
+  &-hover,
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &-focus,
+  &:focus {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &-active,
+  &:active {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .catalog__item-image {
+  width: 100%;
   margin-bottom: 8%;
 }
 
@@ -34,7 +53,17 @@
   text-decoration: none;
 }
 
+.catalog__item-link:hover .catalog__item-title,
+.catalog__item-link:focus .catalog__item-title {
+  opacity: 0.6;
+}
+
+.catalog__item-link:active .catalog__item-title {
+  opacity: 0.3;
+}
+
 .catalog__item-title {
+  max-width: 80%;
   margin: 0;
   margin-bottom: 2%;
   padding: 0;
@@ -86,10 +115,7 @@
   margin-top: 8%;
   width: 20px;
   height: 19px;
-
   font-size: 0;
-
-  background-color: @text-color;
 }
 
 .catalog__item-price {
@@ -109,55 +135,143 @@
   line-height: 1.6;
 }
 
-.production {
-  .flex-column;
-  width: 81.25%;
-  box-sizing: border-box;
-  margin: auto;
-  margin-bottom: 10%;
-  padding: 0;
-  border: 1px solid @grey-color;
+@media screen and (min-width: @tablet-width) {
+  .catalog__title {
+    font-size: 43px;
+    font-weight: 700;
+    line-height: 1;
+    padding-top: 13%;
+    padding-bottom: 10%;
+  }
+
+  .catalog__list {
+    display: block;
+  }
+
+  .catalog__item-image {
+    width: 334px;
+    height: 334px;
+    margin: 0;
+    float: left;
+  }
+
+  .catalog__item {
+    display: block;
+    position: relative;
+  }
+
+  .catalog__item::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .catalog__item-title {
+    max-width: 35%;
+    float: right;
+    margin-top: 4%;
+    margin-bottom: 2.5%;
+    padding-left: 2%;
+    margin-right: 10%;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  .catalog__item-size {
+    width: 40%;
+    display: block;
+    float: right;
+    padding-left: 2%;
+    margin-right: 6%;
+    box-sizing: border-box;
+    color: @text-color;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 2;
+  }
+
+  .catalog__item-size::after {
+    display: none;
+  }
+
+  .catalog__item-inner {
+    width: 46%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
 }
 
-.production__button {
-  margin: 0 auto;
+@media screen and (min-width: @desktop-width) {
+  .catalog {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 6%;
+    padding: 0;
+  }
 
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: 0.9em;
-  padding-bottom: 0.9em;
-  box-sizing: border-box;
-  font-size: 17px;
-  text-decoration: none;
+  .catalog__title {
+    width: 100%;
+    padding-top: 8%;
+    text-align: center;
+    font-size: 53px;
+    font-weight: 700;
+    line-height: 1;
+  }
 
-  margin-bottom: 10%;
-}
+  .catalog__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 3%;
+    padding-left: 3%;
+    padding-top: 3%;
+  }
 
-.production__title {
-  margin: 0;
+  .catalog__item {
+    width: 30%;
+    min-height: 660px; /*временно для сетки */
+    .flex-column;
+  }
 
-  padding-left: 34.6153%;
-  padding-right: 15.3846%;
-  padding-top: 11.5384%;
-  padding-bottom: 11.5384%;
+  .catalog__item-link {
+    .flex-column;
+  }
 
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 1.4;
-}
+  .catalog__item-image {
+    width: 100%;
+    height: 462px;
+    margin-bottom: 4%;
+  }
 
-.production__video {
-  width: 100%;
-  margin-bottom: 8%;
-}
+  .catalog__item-title {
+    max-width: 70%;
+    margin-left: 12%;
+    margin-right: auto;
+    margin-bottom: 3%;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
+  }
 
-.production__text {
-  width: 70.3846%;
-  margin: 0 auto;
-  margin-bottom: 10%;
-  padding: 0;
-  color: @text-color;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 1.8;
+  .catalog__item-size {
+    width: 100%;
+    padding-left: 12%;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 2;
+  }
+
+  .catalog__item-inner {
+    width: 100%;
+    margin-top: auto;
+  }
+
+  .catalog__item-price {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.4;
+    padding-bottom: 10%;
+  }
 }

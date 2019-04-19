@@ -1,5 +1,6 @@
 .page-header {
   position: relative;
+  width: 100%;
   margin: 0;
   padding: 0;
   padding-top: 7%;
@@ -10,7 +11,35 @@
 }
 
 .page-header__logo {
+  width: 86px;
+  height: 35px;
   margin: auto;
+}
+
+/*Открытое меню
+  .page-header {
+    padding-bottom: 0;
+  }
+
+  .page-header__logo {
+    margin-bottom: 7%;
+  }*/
+
+.logo__image-hover path,
+.logo__image:hover path,
+.logo__image-focus path,
+.logo__image:focus path {
+  opacity: 0.6;
+}
+
+.logo__image-active path,
+.logo__image:active path {
+  opacity: 0.3;
+}
+
+.logo__tablet,
+.logo__desktop {
+  display: none;
 }
 
 @media screen and (min-width: @tablet-width) {
@@ -18,6 +47,14 @@
     margin: 0;
     margin-left: 6%;
     margin-top: 2%;
+  }
+
+  .logo__mobile {
+    display: none;
+  }
+
+  .logo__tablet {
+    display: block;
   }
 
   .page-header {
@@ -32,8 +69,16 @@
 @media screen and (min-width: @desktop-width) {
   .page-header__logo {
     position: absolute;
-    top: 1%; //временно для сетки
+    top: -10px; //временно для сетки
     left: 40%;
+  }
+
+  .logo__tablet {
+    display: none;
+  }
+
+  .logo__desktop {
+    display: block;
   }
 
   .page-header {
