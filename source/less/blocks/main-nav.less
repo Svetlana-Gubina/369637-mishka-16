@@ -5,17 +5,56 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: 30px;
-  right: 30px;
+  top: 37%;
+  right: 9.375%;
 
   border: none;
   font-size: 0;
 
   width: 21px;
-  height: 20px;
+  height: 2px;
 
   background-color: black;
 }
+
+.main-nav__toggle::before,
+.main-nav__toggle::after {
+  content: "";
+  width: 21px;
+  height: 2px;
+  position: absolute;
+  background-color: black;
+}
+
+.main-nav__toggle::before {
+  top: 6px;
+  left: 0;
+}
+
+.main-nav__toggle::after {
+  bottom: 6px;
+  left: 0;
+}
+
+/*Открытое меню
+.main-nav__toggle {
+  top: 9.375%;
+  background-color: transparent;
+}
+
+.main-nav__toggle::before {
+  width: 25px;
+  top: 0;
+  left: 0;
+  transform: rotate(45deg);
+}
+
+.main-nav__toggle::after {
+  width: 25px;
+  bottom: 0;
+  left: 0;
+  transform: rotate(-45deg);
+}*/
 
 @media screen and (min-width: @tablet-width) {
   .main-nav__toggle {

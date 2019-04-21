@@ -17,13 +17,22 @@
   margin-bottom: 12%;
 }
 
+.about-us__icon {
+  display: block;
+  padding: 0.9em;
+}
+
+.about-us__icon path {
+  fill: @base-color;
+}
+
 @media screen and (min-width: @tablet-width) {
   .about-us {
     width: 100%;
     box-sizing: border-box;
     padding-top: 10%;
     padding-bottom: 10%;
-    padding-right: 6%;
+    padding-right: 12%;
     padding-left: 6%;
   }
 
@@ -37,12 +46,16 @@
   .about-us__list {
     width: 100%;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
   .about-us__item {
-    max-width: 40%;
+    max-width: 45%;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
   }
 
   .about-us__item--style {
@@ -56,19 +69,6 @@
   .about-us__item--handmade {
     order: 2;
   }
-
-  .about-us__item--supp {
-    order: 4;
-  }
-}
-
-.about-us__icon {
-  display: block;
-  padding: 0.9em;
-}
-
-.about-us__icon path {
-  fill: #63d1bb;
 }
 
 @media screen and (min-width: @desktop-width) {

@@ -1,6 +1,6 @@
 .reviews {
   width: 100%;
-  background-color: #ffffff;
+  background-color: @white-color;
   background-image: none;
 }
 
@@ -28,7 +28,6 @@
 
 .reviews__text {
   width: 95%;
-
   margin: 0;
   margin-bottom: 12.5%;
   padding: 0;
@@ -56,18 +55,19 @@
 }
 
 .reviews__toggles {
+  display: flex;
   width: 100%;
   margin-bottom: 15%;
   font-size: 0;
 }
 
 .reviews__toggle {
-  display: inline-block;
-  box-sizing: border-box;
-  font-size: 0;
   width: 49%;
-  height: 52px;
   border: 1px solid @grey-color;
+}
+
+.reviews__toggle-icon {
+  margin: auto;
 }
 
 @media screen and (min-width: @tablet-width) {
@@ -120,7 +120,7 @@
   }
 
   .reviews__author-name {
-    width: 33%;
+    width: 34.375%;
     margin: 0;
     margin-bottom: 10px;
   }
