@@ -6,8 +6,8 @@
   width: 100%;
   box-sizing: border-box;
   margin: 0;
-  padding-top: 20%;
-  padding-bottom: 4.5em;
+  padding-top: 23%;
+  padding-bottom: 45%;
   padding-left: 7%;
   padding-right: 7%;
   text-align: center;
@@ -24,40 +24,69 @@
   line-height: 1.6;
 }
 
-@media screen and (min-width: @tablet-width) {
-  .page-main {
-    position: relative;
-  }
+.page-main__container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url("../../img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+}
 
+.page-main__border {
+  display: none;
+}
+
+@media screen and (min-width: @tablet-width) {
   .page-main__title {
     margin: 0 auto;
-    margin-top: 21.22%;
-
     padding: 0;
-    padding-bottom: 8.5em;
+    padding-top: 20%;
+    padding-bottom: 45%;
     font-size: 43px;
     font-weight: 700;
     line-height: 1;
   }
 
+  .page-main__container {
+    position: relative;
+    background-image: url("../../img/hero-tablet@1x.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
   .page-main__span {
     display: block;
     position: absolute;
-    top: -120px;
+    top: 6%;
     right: 6.5%;
+  }
+
+  .page-main__border {
+    display: block;
+    width: 100%;
+    height: 30px;
+    margin: 0;
+    margin-top: -20px;
+    padding: 0;
+    z-index: 10;
   }
 }
 
 @media screen and (min-width: @desktop-width) {
-  .page-main {
-    position: relative;
+  .page-main__container {
+    background-image: url("../../img/hero-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 0 -5%;
   }
 
   .page-main__title {
     margin: 0 auto;
-    margin-top: 14%;
     padding: 0;
-    padding-bottom: 6.5em;
+    padding-top: 15%;
+    padding-bottom: 30%;
     font-size: 53px;
     font-weight: 700;
     line-height: 1;
@@ -66,7 +95,7 @@
   .page-main__span {
     display: block;
     position: absolute;
-    top: -100px;  //временно для сетки
+    top: 6%;
     right: 4%;
   }
 }

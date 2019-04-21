@@ -5,6 +5,9 @@
 }
 
 .promo__title {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.2;
   margin-bottom: 1%;
 }
 
@@ -43,7 +46,7 @@
 
 .promo__table {
   color: @text-color;
-  margin-bottom: 9.375%;
+  margin-bottom: 8%;
   border-collapse: collapse;
 }
 
@@ -58,6 +61,8 @@
 }
 
 .promo__image {
+  width: 260px;
+  height: 315px;
   margin-bottom: 9.375%;
 }
 
@@ -140,8 +145,11 @@
 
 @media screen and (min-width: @desktop-width) {
   .promo {
+    width: 91.3%;
+    margin: 0 auto;
     position: relative;
-    padding-left: 14.78%;
+    padding-right: 0;
+    padding-left: 13%;
   }
 
   .promo__title {
@@ -151,6 +159,7 @@
     font-size: 53px;
     font-weight: 700;
     line-height: 1;
+    margin-bottom: 0;
   }
 
   .promo__span {
@@ -162,16 +171,19 @@
   .promo__image {
     width: 525px;
     height: 636px;
-    margin-top: -55%;
+    margin-top: -60%;
   }
 
   .promo__price {
     width: 30%;
-    margin-bottom: 2.5%;
+    margin-bottom: 2%;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
   }
 
   .promo__table {
-    margin-bottom: 8%;
+    margin-bottom: 12%;
   }
 
   .promo__button {

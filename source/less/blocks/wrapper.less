@@ -1,13 +1,18 @@
 .wrapper {
-  width: 100%;
+  width: @mobile-width;
   margin: 0 auto;
   padding: 0;
+}
+
+@media screen and (min-width: @tablet-width) {
+  .wrapper {
+    width: @tablet-width;
+  }
 }
 
 @media screen and (min-width: @desktop-width) {
   .wrapper {
     width: @desktop-width;
     background-color: @white-color;
-    box-sizing: border-box;
   }
 }

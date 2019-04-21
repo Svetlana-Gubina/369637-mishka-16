@@ -1,15 +1,14 @@
 .page-footer {
   width: 100%;
   box-sizing: border-box;
-
   .flex-column;
-
   background-color: @icon-grey-color;
 }
 
 .page-footer__container {
   display: flex;
   padding: 7.8125%;
+  box-sizing: border-box;
 }
 
 .social__list {
@@ -17,30 +16,33 @@
   margin: auto;
   font-size: 0;
 
-  width: 45.3125%;
+  width: 52%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .copyright__flex {
-  width: 57.5%;
+  width: 70%;
   margin: auto;
+  padding: 0;
 }
 
 .copyright__text {
   display: inline-block;
+  padding: 0;
   vertical-align: middle;
   color: @black-color;
   font-size: 19px;
   font-weight: 700;
-  line-height: 1;
+  line-height: 0;
 }
 
 .copyright__link {
   display: inline-block;
+  padding: 0;
   vertical-align: middle;
-  margin-left: 10%;
+  margin-left: 15%;
 }
 
 .copyright__link-icon {
@@ -61,14 +63,19 @@
     fill: @hover-color;
     opacity: 0.3;
   }
+
+  /*&-active .copyright__text,
+  &:active .copyright__text {
+    opacity: 0.3;
+  }*/
 }
 
-.social-button-icon:hover path,
-.social-button-icon:focus path {
+.social-button-icon:hover,
+.social-button-icon:focus {
   fill: @hover-color;
 }
 
-.social-button-icon:active path {
+.social-button-icon:active {
   fill: @hover-color;
   opacity: 0.3;
 }
@@ -77,7 +84,7 @@
   display: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: @tablet-width) {
   .page-footer {
     padding: 6%;
     flex-direction: row;
@@ -124,7 +131,7 @@
   }
 }
 
-@media screen and (min-width: 1250px) {
+@media screen and (min-width: @desktop-width) {
   .page-footer {
     padding: 4%;
     box-sizing: border-box;
@@ -138,12 +145,16 @@
     flex-grow: 0;
   }
 
+  .logo-cont {
+    margin-right: 100px;
+  }
+
   .copyright {
-    width: 16%;
+    width: 18%;
   }
 
   .social {
-    width: 11.6%;
+    width: 15%;
   }
 
   .social__list {
