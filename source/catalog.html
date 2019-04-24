@@ -110,33 +110,49 @@
       </svg>
       <div class="wrapper">
           <header class="page-header">
-              <a class="logo page-header__logo"><svg class="logo__mobile logo__image" width="85.589px" height="35.034px"><use xlink:href="#logo-mobile"></use></svg>
-                <svg class="logo__tablet logo__image" width="112.389px" height="46.087px"><use xlink:href="#logo-tablet"></use></svg>
-                <svg class="logo__desktop logo__image" width="148.051px" height="72.707px"><use xlink:href="#logo-desktop"></use></svg>
-              </a>
-              <button class="main-nav__toggle" type="button">Открыть/Закрыть меню</button>
+              <div class="page-header__flex-logo">
+                  <a class="logo page-header__logo"><svg class="logo__mobile logo__image" width="85.589px" height="35.034px"><use xlink:href="#logo-mobile"></use></svg>
+                    <svg class="logo__tablet logo__image" width="112.389px" height="46.087px"><use xlink:href="#logo-tablet"></use></svg>
+                    <svg class="logo__desktop logo__image" width="148.051px" height="72.707px"><use xlink:href="#logo-desktop"></use></svg>
+                    </a>
+                    <button class="main-nav__toggle" type="button">Открыть/Закрыть меню</button>
+              </div>
               <nav class="main-nav">
                   <div class="main-nav__wrapper">
-                    <ul class="main-nav__list site-list">
-                        <li class="site-list__item site-list__item-cat"><a class="site-list__link" href="catalog.html">Каталог товаров</a></li>
-                        <li class="site-list__item site-list__item-order"><a class="site-list__link" href="order.html">Вязание на заказ</a></li>
-                        <li class="site-list__item site-list__item-cart"><a class="site-list__link" href="cart.html"><span class="site-list__cart-span"><svg class="site-list__cart-icon" width="20.294px" height="18.849px"><use xlink:href="#cart-icon"></use></svg></span>Корзина: пока пуста</a>
-                        </li>
-                        <li class="site-list__item site-list__item-new"><a class="site-list__link" href="new.html">Новые поступления</a></li>
-                        <li class="site-list__item site-list__item-sale"><a class="site-list__link" href="sale.html">Распродажа</a></li>
-                        <li class="site-list__item">
-                          <form class="site-list__form" action="https://echo.htmlacademy.ru" method="GET">
-                            <label class="visually-hidden" for="search-field">Поиск по сайту</label>
-                            <input class="site-list__form-input" id="search-field" type="search" placeholder="Поиск по сайту">
-                          </form>
-                        </li>
-                    </ul>
+                    <div class="main-nav__list site-list">
+                      <div class="site-list__flex site-list__flex-tablet">
+                            <div class="site-list__item site-list__item-cat"><a class="site-list__link" href="catalog.html">Каталог товаров</a></div>
+                            <div class="site-list__item site-list__item-order"><a class="site-list__link" href="order.html">Вязание на заказ</a></div>
+                        </div>
+                        <div class="site-list__flex site-list__flex-desktop">
+                            <div class="site-list__item site-list__item-new"><a class="site-list__link" href="new.html">Новые поступления</a></div>
+                            <div class="site-list__item site-list__item-sale"><a class="site-list__link" href="sale.html">Распродажа</a></div>
+                        </div>
+                        <div class="site-list__flex site-list__flex-form">
+                            <div class="site-list__item">
+                                <form class="site-list__form" action="https://echo.htmlacademy.ru" method="GET">
+                                  <label class="site-list__form-label" for="search-field"><span class="site-list__form-span"><svg width="17.6px" height="17.6px"><use xlink:href="#search-icon"></use></svg></span>Поиск по сайту</label>
+                                  <input class="site-list__form-input" id="search-field" type="search" placeholder="Поиск по сайту">
+                                </form>
+                              </div>
+
+                              <div class="site-list__item site-list__item-cart"><a class="site-list__link" href="cart.html"><span class="site-list__cart-span"><svg class="site-list__cart-icon" width="20.294px" height="18.849px"><use xlink:href="#cart-icon"></use></svg></span>Корзина: пока пуста</a>
+                            </div>
+                        </div>
+                    </div>
                   </div>
               </nav>
           </header>
           <main class="page-main">
-              <h1 class="catalog__title">Каталог товаров</h1>
-              <span class="page-main__span catalog__span">Бесплатная доставка по России</span>
+              <div class="page-main__container page-main__container-cat">
+                  <h1 class="catalog__title">Каталог товаров</h1>
+                  <span class="page-main__span catalog__span">Бесплатная доставка по России</span>
+                  <div class="page-main__border page-main__border-cat">
+                      <svg class="page-main__border-image" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1150px" height="34px" viewBox="0 0 1150 34" enable-background="new 0 0 1150 34" xml:space="preserve">
+                        <path fill="#FFFFFF" d="M1121.252,0c-14.375,0-14.375,14-28.749,14s-14.374-14-28.748-14s-14.374,14-28.748,14 c-14.375,0-14.375-14-28.75-14c-14.374,0-14.374,14-28.748,14S963.135,0,948.761,0s-14.374,14-28.749,14S905.637,0,891.263,0 s-14.374,14-28.749,14s-14.375-14-28.75-14c-14.371,0-14.371,14-28.743,14c-14.375,0-14.375-14-28.75-14 c-14.372,0-14.372,14-28.744,14c-14.374,0-14.374-14-28.747-14s-14.373,14-28.747,14C675.66,14,675.66,0,661.287,0 c-14.374,0-14.374,14-28.748,14c-14.375,0-14.375-14-28.751-14c-14.374,0-14.374,14-28.748,14S560.666,0,546.292,0 s-14.374,14-28.748,14C503.17,14,503.17,0,488.796,0c-14.375,0-14.375,14-28.75,14C445.67,14,445.67,0,431.293,0 c-14.375,0-14.375,14-28.75,14c-14.375,0-14.375-14-28.751-14c-14.375,0-14.375,14-28.75,14S330.666,0,316.291,0 s-14.375,14-28.751,14c-14.376,0-14.376-14-28.753-14c-14.374,0-14.374,14-28.747,14c-14.375,0-14.375-14-28.75-14 c-14.375,0-14.375,14-28.751,14c-14.377,0-14.377-14-28.754-14c-14.377,0-14.377,14-28.755,14c-14.378,0-14.378-14-28.756-14 S71.896,14,57.518,14C43.139,14,43.139,0,28.759,0S14.38,14,0,14v20h1150V14C1135.626,14,1135.626,0,1121.252,0z"/>
+                      </svg>
+                  </div>
+              </div>
               <section class="catalog section">
                   <ul class="catalog__list">
                     <li class="catalog__item">

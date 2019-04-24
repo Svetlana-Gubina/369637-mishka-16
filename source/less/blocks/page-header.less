@@ -1,8 +1,7 @@
 .page-header {
   position: relative;
   width: 100%;
-  margin: 0;
-  padding: 0;
+  .indent();
   padding-top: 7%;
   padding-bottom: 7%;
   box-shadow: 0 1px @grey-color, inset 0 1px 0 @grey-color;
@@ -10,11 +9,20 @@
   .flex-column;
 }
 
+.page-header__flex-logo {
+  width: 100%;
+  .indent();
+}
+
 .page-header__logo {
   width: 86px;
   height: 35px;
   margin: auto;
-  outline: 3px solid purple;
+}
+
+.logo__tablet,
+.logo__desktop {
+  display: none;
 }
 
 /*Открытое меню
@@ -26,52 +34,69 @@
     margin-bottom: 7%;
   }*/
 
-.logo__image-hover path,
+/*.logo__image-hover,
 .logo__image:hover path,
 .logo__image-focus path,
 .logo__image:focus path {
   opacity: 0.6;
 }
 
-.logo__image-active path,
-.logo__image:active path {
+.logo__image-active,
+.logo__image:active {
   opacity: 0.3;
 }
 
 .logo__tablet,
 .logo__desktop {
   display: none;
-}
+}*/
 
 @media screen and (min-width: @tablet-width) {
-  .page-header__logo {
-    margin: 0;
-    margin-left: 6%;
-    margin-top: 2%;
+  .page-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    box-shadow: transparent;
   }
 
-  .logo__mobile {
+  .page-header__flex-logo {
+    width: 50%;
+    display: flex;
+    flex-grow: 1;
+    .indent();
+  }
+
+  .page-header__logo {
+    width: 113px;
+    height: 46px;
+    margin-left: 10%;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .logo__mobile,
+  .logo__desktop {
     display: none;
   }
 
   .logo__tablet {
     display: block;
   }
-
-  .page-header {
-    position: relative;
-    width: 100%;
-    min-height: 90px;
-    padding: 0;
-    box-shadow: transparent;
-  }
 }
 
 @media screen and (min-width: @desktop-width) {
+  .page-header {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    box-shadow: transparent;
+  }
+
   .page-header__logo {
     position: absolute;
-    top: -10px; //временно для сетки
-    left: 40%;
+    top: 20%;
+    left: 35%;
   }
 
   .logo__tablet {
@@ -80,13 +105,5 @@
 
   .logo__desktop {
     display: block;
-  }
-
-  .page-header {
-    position: relative;
-    width: 100%;
-    padding: 0;
-    height: 90px; //временно для сетки
-    box-shadow: transparent;
   }
 }
