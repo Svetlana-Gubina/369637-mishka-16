@@ -158,6 +158,7 @@
     position: absolute;
     top: 110%;
     left: 0;
+    z-index: 20;
   }
 
   .site-list__item-cat,
@@ -244,7 +245,15 @@
   .site-list__item-new,
   .site-list__item-sale {
     flex-grow: 1;
-    padding: 5%;
+    padding: 4%;
+  }
+
+  .site-list__item-sale {
+    padding-right: 15%;
+  }
+
+  .site-list__item-order {
+    padding-right: 8%;
   }
 
   .site-list__item-new .site-list__link {
