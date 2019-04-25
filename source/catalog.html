@@ -121,6 +121,9 @@
                   <polygon fill="#FFFFFF" points="285.733,403.138 285.733,438.846 315.48,420.992 	"/>
                 </g>
           </symbol>
+          <symbol viewBox="-0.8 -0.8 17.6 17.6" id="search-icon">
+              <path fill="#231F20" d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"/>
+          </symbol>
       </svg>
       <div class="wrapper">
           <header class="page-header">
@@ -132,30 +135,23 @@
                     <button class="main-nav__toggle" type="button">Открыть/Закрыть меню</button>
               </div>
               <nav class="main-nav">
-                  <div class="main-nav__wrapper">
-                    <div class="main-nav__list site-list">
-                      <div class="site-list__flex site-list__flex-tablet">
-                            <div class="site-list__item site-list__item-cat"><a class="site-list__link" href="catalog.html">Каталог товаров</a></div>
-                            <div class="site-list__item site-list__item-order"><a class="site-list__link" href="form.html">Вязание на заказ</a></div>
-                        </div>
-                        <div class="site-list__flex site-list__flex-desktop">
-                            <div class="site-list__item site-list__item-new"><a class="site-list__link" href="new.html">Новые поступления</a></div>
-                            <div class="site-list__item site-list__item-sale"><a class="site-list__link" href="sale.html">Распродажа</a></div>
-                        </div>
-                        <div class="site-list__flex site-list__flex-form">
-                            <div class="site-list__item">
-                                <form class="site-list__form" action="https://echo.htmlacademy.ru" method="GET">
-                                  <label class="site-list__form-label" for="search-field"><span class="site-list__form-span"><svg width="17.6px" height="17.6px"><use xlink:href="#search-icon"></use></svg></span>Поиск по сайту</label>
-                                  <input class="site-list__form-input" id="search-field" type="search" placeholder="Поиск по сайту">
-                                </form>
-                              </div>
-
-                              <div class="site-list__item site-list__item-cart"><a class="site-list__link" href="cart.html"><span class="site-list__cart-span"><svg class="site-list__cart-icon" width="20.294px" height="18.849px"><use xlink:href="#cart-icon"></use></svg></span>Корзина: пока пуста</a>
-                            </div>
-                        </div>
+                <div class="main-nav__wrapper">
+                  <div class="main-nav__list site-list">
+                    <div class="site-list__flex site-list__flex-tablet">
+                          <div class="site-list__item site-list__item-cat"><a class="site-list__link" href="catalog.html">Каталог товаров</a></div>
+                          <div class="site-list__item site-list__item-order"><a class="site-list__link" href="form.html">Вязание на заказ</a></div>
+                      </div>
+                      <div class="site-list__flex site-list__flex-desktop">
+                          <div class="site-list__item site-list__item-new"><a class="site-list__link" href="new.html">Новые поступления</a></div>
+                          <div class="site-list__item site-list__item-sale"><a class="site-list__link" href="sale.html">Распродажа</a></div>
+                      </div>
+                      <div class="site-list__flex site-list__flex-search">
+                          <div class="site-list__item site-list__item-search"><a class="site-list__link" href="search.html"><span class="site-list__search-span"><svg class="site-list__search-icon" width="17.6px" height="17.6px"><use xlink:href="#search-icon"></use></svg></span>Поиск по сайту</a></div>
+                          <div class="site-list__item site-list__item-cart"><a class="site-list__link" href="cart.html"><span class="site-list__cart-span"><svg class="site-list__cart-icon" width="20.294px" height="18.849px"><use xlink:href="#cart-icon"></use></svg></span>Корзина: пока пуста</a></div>
+                      </div>
                     </div>
                   </div>
-              </nav>
+                </nav>
           </header>
           <main class="page-main">
               <div class="page-main__container page-main__container-cat">
@@ -219,7 +215,7 @@
               <section class="production section">
                   <h2 class="production__title"><span class="production__span"><svg class="production__icon" aria-hidden="true" role="presentation" width="32px" height="32px"><use xlink:href="#production-icon"></use></svg></span>Процесс производства</h2>
 
-                  <div class="production__container">
+                  <div class="production__container production__video">
                       <svg class="production__icon-controls" width="100.678px" height="76.891px"><use xlink:href="#video-controls"></use></svg>
                       <picture>
                           <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/photo-1-desktop@1x.jpg 2x">
