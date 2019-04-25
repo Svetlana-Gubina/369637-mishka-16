@@ -21,6 +21,7 @@
 }
 
 .contacts__wrapper {
+  display: table;
   width: 100%;
   box-sizing: border-box;
   margin: 0;
@@ -29,7 +30,12 @@
   padding-right: 9%;
 }
 
+.contacts__wrapper-row {
+  display: table-row;
+}
+
 .contacts__text {
+  display: table-cell;
   .indent();
   color: @text-color;
   padding-top: 1.5em;
@@ -114,21 +120,16 @@
     background-size: 100% 5%;
     background-repeat: no-repeat;
     background-position: 0 0;
-    outline: 4px solid hotpink;
   }
 
   .contacts__wrapper {
+    display: flex;
     flex: 1 1 auto;
     width: 82%;
     box-sizing: border-box;
     margin: 0 auto;
     margin-bottom: 7.8125%;
     padding: 0;
-  }
-
-  tbody {
-    display: flex;
-    width: 100%;
   }
 
   .contacts__br {
@@ -186,7 +187,6 @@
   }
 }
 
-
 @media screen and (min-width: @desktop-width) {
   .contacts {
     width: 91.3%;
@@ -236,6 +236,7 @@
   }
 
   .contacts__wrapper {
+    display: table;
     max-width: 35%;
     padding: 0;
     float: left;
@@ -243,11 +244,12 @@
     margin-bottom: 5%;
   }
 
-  tbody {
-    display: block;
+  .contacts__wrapper-row {
+    display: table-row;
   }
 
   .contacts__text {
+    display: table-cell;
     font-size: 17px;
     line-height: 1.7;
   }
