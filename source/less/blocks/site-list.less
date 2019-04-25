@@ -50,29 +50,26 @@
   display: none;
 }
 
-.site-list__cart-span {
-  margin-right: 28px;
-}
-
 .site-list__cart-icon {
   fill: @icon-grey-color;
   opacity: 0.2;
+}
 
-  &-hover path,
-  &:hover path {
-    fill: @base-color;
-  }
+.site-list__link-cart-hover .site-list__cart-icon,
+.site-list__link-cart:hover .site-list__cart-icon,
+.site-list__link-cart-focus .site-list__cart-icon,
+.site-list__link-cart:focus .site-list__cart-icon {
+  fill: @base-color;
+}
 
-  &-focus path,
-  &:focus path {
-    fill: @base-color;
-  }
+.site-list__link-cart-active .site-list__cart-icon,
+.site-list__link-cart:active .site-list__cart-icon {
+  fill: @base-color;
+  opacity: 0.3;
+}
 
-  &-active path,
-  &:active path {
-    fill: @base-color;
-    opacity: 0.3;
-  }
+.site-list__cart-span {
+  margin-right: 28px;
 }
 
 .site-list__form {

@@ -4,16 +4,18 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: 37%;
+  /*top: 37%;
+  height: 2px;
+  background-color: black;*/
   right: 9.375%;
 
   border: none;
   font-size: 0;
 
   width: 21px;
-  height: 2px;
-
-  background-color: black;
+  /*Открытое меню*/
+  top: 9.375%;
+  background-color: transparent;
 }
 
 .main-nav__toggle::before,
@@ -25,7 +27,7 @@
   background-color: black;
 }
 
-.main-nav__toggle::before {
+/*.main-nav__toggle::before {
   top: 6px;
   left: 0;
 }
@@ -33,13 +35,9 @@
 .main-nav__toggle::after {
   bottom: 6px;
   left: 0;
-}
+}*/
 
-/*Открытое меню
-.main-nav__toggle {
-  top: 9.375%;
-  background-color: transparent;
-}
+/*Открытое меню*/
 
 .main-nav__toggle::before {
   width: 25px;
@@ -53,7 +51,7 @@
   bottom: 0;
   left: 0;
   transform: rotate(-45deg);
-}*/
+}
 
 @media screen and (min-width: @tablet-width) {
   .main-nav {

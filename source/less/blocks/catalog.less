@@ -54,6 +54,7 @@
   text-decoration: none;
 }
 
+
 .catalog__item-link:hover .catalog__item-title,
 .catalog__item-link:focus .catalog__item-title {
   opacity: 0.6;
@@ -139,18 +140,15 @@
   fill: @icon-grey-color;
   opacity: 0.2;
 
-  &-hover path,
-  &:hover path {
+  &-hover,
+  &:hover,
+  &-focus,
+  &:focus {
     fill: @base-color;
   }
 
-  &-focus path,
-  &:focus path {
-    fill: @base-color;
-  }
-
-  &-active path,
-  &:active path {
+  &-active,
+  &:active {
     fill: @base-color;
     opacity: 0.3;
   }
