@@ -1,5 +1,85 @@
 .main-nav {
+  width: 100%;
   .indent();
+  .flex-column;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.main-nav-flex {
+  .indent();
+  .flex-column;
+}
+
+.main-nav-flex-logo {
+  position: relative;
+  flex-direction: row;
+}
+
+.main-nav__item {
+  display: flex;
+  .indent();
+  box-shadow: 0 1px 0 @grey-color, inset 0 1px 0 @grey-color;
+}
+
+.main-nav-flex-desktop {
+  display: none;
+}
+
+.main-nav__link {
+  display: block;
+  color: #000000;
+  margin: auto;
+  padding-top: 8%;
+  padding-bottom: 8%;
+
+  text-align: left;
+  text-decoration: none;
+
+  &-hover,
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &-focus,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &-active,
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav__item-search .main-nav__link,
+.main-nav__item-cart .main-nav__link {
+  margin-left: 20%;
+}
+
+.main-nav__cart-icon,
+.main-nav__search-icon {
+  fill: @icon-grey-color;
+  opacity: 0.2;
+}
+
+.main-nav__link-cart-hover .main-nav__cart-icon,
+.main-nav__link-cart:hover .main-nav__cart-icon,
+.main-nav__link-cart-focus .main-nav__cart-icon,
+.main-nav__link-cart:focus .main-nav__cart-icon {
+  fill: @base-color;
+}
+
+.main-nav__link-cart-active .main-nav__cart-icon,
+.main-nav__link-cart:active .main-nav__cart-icon {
+  fill: @base-color;
+  opacity: 0.3;
+}
+
+.main-nav__cart-span,
+.main-nav__search-span {
+  margin-right: 28px;
 }
 
 .main-nav__toggle {
@@ -7,14 +87,14 @@
   /*top: 37%;
   height: 2px;
   background-color: black;*/
-  right: 9.375%;
+  right: 13%;
 
   border: none;
   font-size: 0;
 
   width: 21px;
   /*Открытое меню*/
-  top: 9.375%;
+  top: 50%;
   background-color: transparent;
 }
 
@@ -55,13 +135,67 @@
 
 @media screen and (min-width: @tablet-width) {
   .main-nav {
-    width: 52%;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
     min-height: 90px;
   }
 
-  .main-nav__wrapper {
-    width: 100%;
-    .indent();
+  .main-nav__item {
+    border: none;
+    box-shadow: none;
+  }
+
+  .main-nav__item-search {
+    width: 20%;
+    min-height: 90px;
+    box-shadow: 0 1px 0 @grey-color, inset 0 1px 0 @grey-color;
+    border-left: 1px solid @grey-color;
+    border-right: 1px solid @grey-color;
+  }
+
+  .main-nav__item-search .main-nav__link {
+    font-size: 0;
+  }
+
+  .main-nav__item-cart {
+    flex-grow: 1;
+  }
+
+  .main-nav__item-cart .main-nav__link {
+    margin-left: 12%;
+  }
+
+  .main-nav-flex-tablet {
+    width: 50%;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    z-index: 20;
+  }
+
+  .main-nav__item-cat .main-nav__link {
+    padding-left: 12%;
+  }
+
+  .main-nav-flex-logo {
+    width: 47%;
+  }
+
+  .main-nav-flex-search {
+    width: 50%;
+    flex-grow: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .main-nav__search-span {
+    margin: auto;
+    margin-left: 40%;
   }
 
   .main-nav__toggle {
@@ -70,7 +204,80 @@
 }
 
 @media screen and (min-width: @desktop-width) {
+  .main-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .main-nav__item-search {
+    width: 80px;
+    min-height: 90px;
+  }
+
+  .main-nav__item-search .main-nav__link {
+    font-size: 0;
+  }
+
+  .main-nav__item-cat,
+  .main-nav__item-order {
+    border-right: 1px solid @grey-color;
+  }
+
+  .main-nav__item-cart {
+    flex-grow: 1;
+  }
+
+  .main-nav__item-cat .main-nav__link,
+  .main-nav__item-order .main-nav__link {
+    padding-right: 2em;
+    padding-left: 2.5em;
+  }
+
+  .main-nav__item-cart .main-nav__link {
+    margin-left: 10%;
+  }
+
+  .main-nav__item-new .main-nav__link,
+  .main-nav__item-sale .main-nav__link {
+    padding: 1em;
+    padding-left: 2.5em;
+  }
+
+  .main-nav-flex {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .main-nav-flex-logo {
+    width: 15%;
+    padding-bottom: 2%;
+  }
+
+  .main-nav-flex-tablet {
+    max-width: 40%;
+    position: static;
+    justify-content: flex-start;
+    order: -1;
+    margin-right: 2em;
+  }
+
+  .main-nav-flex-search {
+    margin-left: auto;
+    width: 35%;
+    flex-grow: 0;
+  }
+
   .main-nav__toggle {
     display: none;
+  }
+
+  .main-nav-flex-desktop {
+    width: 43.5%;
+    display: flex;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    box-shadow: none;
+    z-index: 20;
   }
 }

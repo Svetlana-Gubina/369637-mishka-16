@@ -3,22 +3,16 @@
   width: 100%;
   .indent();
   box-shadow: 0 1px @grey-color, inset 0 1px 0 @grey-color;
-  box-sizing: border-box;
-  .flex-column;
-}
-
-.page-header__flex-logo {
-  width: 100%;
-  .indent();
-  padding-top: 6%;
-  padding-bottom: 6%;
 }
 
 .page-header__logo {
+  display: block;
   width: 86px;
   height: 35px;
   margin: auto;
   margin-left: 40%;
+  padding-top: 6%;
+  padding-bottom: 6%;
 }
 
 .logo__tablet,
@@ -76,13 +70,6 @@
     position: relative;
     width: 100%;
     padding: 0;
-    box-shadow: transparent;
-  }
-
-  .page-header__logo {
-    position: absolute;
-    top: 20%;
-    left: 33%;
   }
 
   .logo__tablet {
@@ -97,6 +84,7 @@
   .page-header__logo:hover .logo__desktop,
   .page-header__logo-focus .logo__desktop,
   .page-header__logo:focus .logo__desktop {
+    flex-wrap: wrap;
     opacity: 0.6;
   }
 
