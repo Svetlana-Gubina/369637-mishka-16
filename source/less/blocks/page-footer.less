@@ -11,20 +11,26 @@
   box-sizing: border-box;
 }
 
+.copyright {
+  padding-top: 5%;
+}
+
 .social__list {
   .list;
   margin: auto;
   font-size: 0;
   width: 52%;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .copyright__flex {
-  width: 70%;
+  width: 90%;
   margin: auto;
-  padding: 0;
+  margin-left: 18%;
+  padding: 1%;
 }
 
 .copyright__text {
@@ -32,7 +38,7 @@
   padding: 0;
   vertical-align: middle;
   color: @black-color;
-  font-size: 19px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 0;
 }
@@ -66,6 +72,11 @@
   opacity: 0.3;
 }
 
+.social-button {
+  display: block;
+  padding: 10%;
+}
+
 .social-button-hover .social-button-icon,
 .social-button:hover .social-button-icon,
 .social-button-focus .social-button-icon,
@@ -85,8 +96,9 @@
 
 @media screen and (min-width: @tablet-width) {
   .page-footer {
-    padding-top: 5%;
-    padding-bottom: 7%;
+    padding: 6%;
+    padding-top: 6.5%;
+    padding-bottom: 5%;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -94,9 +106,7 @@
   }
 
   .page-footer__container {
-    padding: 0;
-    flex-grow: 1;
-    box-sizing: border-box;
+    .indent();
   }
 
   .logo-cont {
@@ -104,17 +114,18 @@
   }
 
   .social {
-    width: 18.75%;
+    width: 22%;
   }
 
   .social__list {
-    margin-left: 28%;
+    .indent();
+    padding-top: 6%;
+    width: 100%;
   }
 
   .page-footer__logo {
     width: 102px;
     height: 34px;
-    margin-left: 15%;
   }
 
   .page-footer__logo-hover .footer__logo-image,
@@ -130,12 +141,18 @@
     opacity: 0.3;
   }
 
-  .copyright__flex {
-    width: 100%;
+  .copyright {
+    width: 30%;
   }
 
-  .copyright__link {
-    margin-left: 10%;
+  .copyright__flex {
+    width: 100%;
+    margin: 0;
+    padding: 0.5em;
+  }
+
+  .copyright__text {
+    margin-top: 0.5em;
   }
 }
 
@@ -151,22 +168,40 @@
 
   .page-footer__container {
     padding: 0;
-    flex-grow: 0;
   }
 
   .logo-cont {
-    margin-right: 70px;
+    padding-top: 0.5em;
+    margin-right: 95px;
   }
 
   .copyright {
     width: 20%;
   }
 
+  .copyright__flex {
+    width: 100%;
+    margin: 0;
+    padding: 0.5em;
+    padding-right: 0;
+    padding-left: 1em;
+  }
+
+  .copyright__text {
+    font-size: 18px;
+  }
+
+  .copyright__span {
+    padding: 0;
+  }
+
   .social {
-    width: 18%;
+    width: 14%;
+    margin-right: 0.5%;
   }
 
   .social__list {
     width: 100%;
+    padding-top: 9%;
   }
 }

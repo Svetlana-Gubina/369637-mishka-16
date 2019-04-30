@@ -11,7 +11,7 @@
   line-height: 1.1;
   margin: 0;
   margin-bottom: 8%;
-  padding-top: 20%;
+  padding-top: 21%;
   padding-bottom: 25%;
   text-align: center;
   background-color: @icon-grey-color;
@@ -22,12 +22,12 @@
   margin-bottom: 8%;
 
   padding-left: 10%;
-  padding-right: 15%;
+  padding-right: 12%;
 
   color: @text-color;
   font-size: 13px;
   font-weight: 400;
-  line-height: 1.8;
+  line-height: 1.9;
 }
 
 .order__text-small {
@@ -57,8 +57,7 @@
 }
 
 .order__form-fieldset {
-  margin: 0;
-  padding: 0;
+  .indent();
   border: 0 none;
 }
 
@@ -189,6 +188,10 @@
   background-color: @white-color;
 }
 
+.order__form-radio-1 + label::before {
+  top: -30%;
+}
+
 .order__form-radio:hover + label::before,
 .order__form-radio:focus + label::before,
 .order__form-checkbox:hover + label::before,
@@ -214,7 +217,7 @@
 }
 
 .order__form-radio-1:checked + label::after {
-  top: -10%;
+  top: 10%;
 }
 
 .order__form-input-text {
@@ -311,8 +314,8 @@
 
 .personal-info__span {
   position: absolute;
-  top: 25%;
-  right: 5%;
+  top: 45%;
+  right: 1%;
 }
 
 .personal-info__icon-tel,
@@ -330,6 +333,17 @@
   padding: 0;
 }
 
+.input-grey-hover .personal-info__icon-tel,
+.input-grey:hover .personal-info__icon-tel,
+.input-grey-hover .personal-info__icon-email,
+.input-grey:hover .personal-info__icon-email,
+.input-grey-focus .personal-info__icon-tel,
+.input-grey:focus .personal-info__icon-tel,
+.input-grey-focus .personal-info__icon-email,
+.input-grey:focus .personal-info__icon-email {
+  fill: @hover-color;
+}
+
 @media screen and (min-width: @tablet-width) {
   .order {
     position: relative;
@@ -341,15 +355,15 @@
     line-height: 1;
     margin-bottom: 0;
     padding-top: 13%;
-    padding-bottom: 13%;
+    padding-bottom: 12%;
   }
 
   .order__text {
     font-size: 17px;
     font-weight: 400;
-    line-height: 2;
-    margin-bottom: 6%;
-    padding-right: 6%;
+    line-height: 1.9;
+    margin-bottom: 8%;
+    padding-right: 10%;
     padding-left: 6%;
   }
 
@@ -376,6 +390,7 @@
   .fieldset__color {
     padding: 6%;
     padding-top: 4%;
+    padding-right: 4%;
     background-color: @icon-grey-color;
   }
 
@@ -392,20 +407,19 @@
   }
 
   .order__form-flex {
-    margin: 0;
-    padding: 0;
+    .indent();
     flex-direction: row;
     flex-wrap: wrap;
   }
 
   .flex__pad {
-    margin-left: 30%;
+    margin-left: 28%;
     margin-top: -10%;
   }
 
   .flex__color,
   .flex__name {
-    margin-left: 28%;
+    margin-left: 26%;
   }
 
   .flex__color {
@@ -430,19 +444,19 @@
 
   .order__form-legend-type {
     position: absolute;
-    top: 10%;
+    top: 8%;
     left: 6%;
   }
 
   .order__form-legend-name {
     position: absolute;
-    top: 8%;
+    top: 7.5%;
     left: 6%;
   }
 
   .order__form-legend-color {
     position: absolute;
-    top: 25%;
+    top: 22%;
     left: 6%;
   }
 
@@ -456,7 +470,7 @@
   .legend-label-add {
     position: absolute;
     top: 20%;
-    left: -35%;
+    left: -30%;
   }
 
   .order__form-field {
@@ -469,6 +483,10 @@
   .flex__pad .order__form-field {
     margin-bottom: 6%;
     width: 100%;
+  }
+
+  .order__form-field-radio {
+    margin-bottom: 2%;
   }
 
   .order__form-field-checkbox {
@@ -557,7 +575,7 @@
     padding-top: 1em;
     padding-bottom: 1em;
     position: absolute;
-    left: 4%;
+    left: 6%;
     bottom: 3%;
     font-size: 17px;
     font-weight: 700;
@@ -574,6 +592,12 @@
     top: 15%;
     left: -1.8%;
   }
+
+  .personal-info__span {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+  }
 }
 
 @media screen and (min-width: @desktop-width) {
@@ -589,11 +613,19 @@
   .order__text {
     padding-left: 20%;
     padding-right: 20%;
+    margin-bottom: 6%;
   }
 
   .order__span {
     top: 4%;
     right: 6%;
+  }
+
+  .fieldset__color {
+    padding-top: 3%;
+    padding-right: 4%;
+    padding-bottom: 2%;
+    margin-bottom: 4%;
   }
 
   .fieldset__pad .order__form-field {
@@ -604,20 +636,24 @@
     padding-top: 0;
   }
 
-  .flex__pad,
-  .flex__color {
+  .flex__pad {
     margin-left: 18%;
+  }
+
+  .flex__color {
+    margin-left: 16%;
   }
 
   .flex__name {
     margin-left: 20%;
+    margin-bottom: 5%;
     padding-bottom: 0;
   }
 
   .flex__contacts {
     padding-top: 4%;
-    padding-bottom: 4%;
-    padding-left: 18%;
+    padding-bottom: 3%;
+    padding-left: 20%;
   }
 
   .flex__contacts .personal-info-special {
@@ -637,10 +673,6 @@
     padding-left: 20%;
   }
 
-  .fieldset__color {
-    padding-bottom: 2%;
-  }
-
   .flex__contacts,
   .flex__name {
     padding-right: 20%;
@@ -648,13 +680,13 @@
 
   .legend-label-tel,
   .legend-label-email {
-    top: 50%;
-    left: -12%;
+    top: 30%;
+    left: -18%;
   }
 
   .legend-label-add {
     top: 8%;
-    left: -15%;
+    left: -18%;
   }
 
   .order__form-button {
@@ -664,7 +696,9 @@
   }
 
   .order__form-radio + label::before {
-    top: -100%;
+    width: 48px;
+    height: 48px;
+    top: -80%;
     left: -2%;
   }
 
@@ -680,7 +714,7 @@
   }
 
   .order__form-legend-name {
-    top: 6%;
+    top: 3%;
     left: 10%;
   }
 
@@ -694,11 +728,19 @@
     padding-bottom: 0;
   }
 
+  .personal-info-field {
+    margin-bottom: 3%;
+  }
+
   .order__text-small {
     right: 0;
-    bottom: 4%;
+    bottom: 0;
     font-size: 17px;
     font-weight: 400;
     line-height: 1.4;
+  }
+
+  .personal-info__span {
+    right: 2%;
   }
 }
