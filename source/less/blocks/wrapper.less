@@ -4,10 +4,15 @@
   padding: 0;
 }
 
+@media screen and (min-width: @tablet-width) {
+  .wrapper {
+    width: @tablet-width;
+  }
+}
+
 @media screen and (min-width: @desktop-width) {
   .wrapper {
     width: @desktop-width;
     background-color: @white-color;
-    box-sizing: border-box;
   }
 }

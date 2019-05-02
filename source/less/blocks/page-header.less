@@ -1,40 +1,18 @@
 .page-header {
   position: relative;
   width: 100%;
-  margin: 0;
-  padding: 0;
-  padding-top: 7%;
-  padding-bottom: 7%;
+  .indent();
   box-shadow: 0 1px @grey-color, inset 0 1px 0 @grey-color;
-  box-sizing: border-box;
-  .flex-column;
 }
 
 .page-header__logo {
+  display: block;
   width: 86px;
   height: 35px;
   margin: auto;
-}
-
-/*Открытое меню
-  .page-header {
-    padding-bottom: 0;
-  }
-
-  .page-header__logo {
-    margin-bottom: 7%;
-  }*/
-
-.logo__image-hover path,
-.logo__image:hover path,
-.logo__image-focus path,
-.logo__image:focus path {
-  opacity: 0.6;
-}
-
-.logo__image-active path,
-.logo__image:active path {
-  opacity: 0.3;
+  margin-left: 35%;
+  margin-right: 20%;
+  padding: 2%;
 }
 
 .logo__tablet,
@@ -43,13 +21,30 @@
 }
 
 @media screen and (min-width: @tablet-width) {
-  .page-header__logo {
-    margin: 0;
-    margin-left: 6%;
-    margin-top: 2%;
+  .page-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    box-shadow: transparent;
   }
 
-  .logo__mobile {
+  .page-header__flex-logo {
+    width: 48%;
+    display: flex;
+    .indent();
+  }
+
+  .page-header__logo {
+    width: 113px;
+    height: 46px;
+    margin-left: 10%;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .logo__mobile,
+  .logo__desktop {
     display: none;
   }
 
@@ -57,20 +52,24 @@
     display: block;
   }
 
-  .page-header {
-    position: relative;
-    width: 100%;
-    min-height: 90px;
-    padding: 0;
-    box-shadow: transparent;
+  .page-header__logo-hover .logo__tablet,
+  .page-header__logo:hover .logo__tablet,
+  .page-header__logo-focus .logo__tablet,
+  .page-header__logo:focus .logo__tablet {
+    opacity: 0.6;
+  }
+
+  .page-header__logo-active .logo__tablet,
+  .page-header__logo:active .logo__tablet {
+    opacity: 0.3;
   }
 }
 
 @media screen and (min-width: @desktop-width) {
-  .page-header__logo {
-    position: absolute;
-    top: -10px; //временно для сетки
-    left: 40%;
+  .page-header {
+    position: relative;
+    width: 100%;
+    padding: 0;
   }
 
   .logo__tablet {
@@ -81,11 +80,16 @@
     display: block;
   }
 
-  .page-header {
-    position: relative;
-    width: 100%;
-    padding: 0;
-    height: 90px; //временно для сетки
-    box-shadow: transparent;
+  .page-header__logo-hover .logo__desktop,
+  .page-header__logo:hover .logo__desktop,
+  .page-header__logo-focus .logo__desktop,
+  .page-header__logo:focus .logo__desktop {
+    flex-wrap: wrap;
+    opacity: 0.6;
+  }
+
+  .page-header__logo-active .logo__desktop,
+  .page-header__logo:active .logo__desktop {
+    opacity: 0.3;
   }
 }

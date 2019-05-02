@@ -1,74 +1,91 @@
 .page-footer {
   width: 100%;
   box-sizing: border-box;
-
   .flex-column;
-
   background-color: @icon-grey-color;
 }
 
 .page-footer__container {
   display: flex;
   padding: 7.8125%;
+  box-sizing: border-box;
+}
+
+.copyright {
+  padding-top: 5%;
 }
 
 .social__list {
   .list;
   margin: auto;
   font-size: 0;
-
-  width: 45.3125%;
+  width: 52%;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .copyright__flex {
-  width: 57.5%;
+  width: 90%;
   margin: auto;
+  margin-left: 18%;
+  padding: 1%;
 }
 
 .copyright__text {
   display: inline-block;
+  padding: 0;
   vertical-align: middle;
   color: @black-color;
-  font-size: 19px;
+  font-size: 20px;
   font-weight: 700;
-  line-height: 1;
+  line-height: 0;
 }
 
-.copyright__link {
+.copyright__span {
   display: inline-block;
+  padding: 0;
   vertical-align: middle;
-  margin-left: 10%;
+  margin-left: 15%;
 }
 
-.copyright__link-icon {
+.copyright__span-icon {
   fill: @base-color;
-
-  &-hover,
-  &:hover {
-    fill: @hover-color;
-  }
-
-  &-focus,
-  &:focus {
-    fill: @hover-color;
-  }
-
-  &-active,
-  &:active {
-    fill: @hover-color;
-    opacity: 0.3;
-  }
 }
 
-.social-button-icon:hover path,
-.social-button-icon:focus path {
+.copyright__link-hover .copyright__span-icon,
+.copyright__link:hover .copyright__span-icon,
+.copyright__link-focus .copyright__span-icon,
+.copyright__link:focus .copyright__span-icon {
   fill: @hover-color;
 }
 
-.social-button-icon:active path {
+.copyright__link-active .copyright__span-icon,
+.copyright__link:active .copyright__span-icon {
+  fill: @hover-color;
+  opacity: 0.3;
+}
+
+.copyright__link-active .copyright__text,
+.copyright__link:active .copyright__text {
+  opacity: 0.3;
+}
+
+.social-button {
+  display: block;
+  padding: 10%;
+}
+
+.social-button-hover .social-button-icon,
+.social-button:hover .social-button-icon,
+.social-button-focus .social-button-icon,
+.social-button:focus .social-button-icon {
+  fill: @hover-color;
+}
+
+.social-button-active .social-button-icon,
+.social-button:active .social-button-icon {
   fill: @hover-color;
   opacity: 0.3;
 }
@@ -77,9 +94,11 @@
   display: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: @tablet-width) {
   .page-footer {
     padding: 6%;
+    padding-top: 6.5%;
+    padding-bottom: 5%;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -87,9 +106,7 @@
   }
 
   .page-footer__container {
-    padding: 0;
-    flex-grow: 1;
-    box-sizing: border-box;
+    .indent();
   }
 
   .logo-cont {
@@ -97,36 +114,52 @@
   }
 
   .social {
-    width: 18.75%;
+    width: 22%;
+  }
+
+  .social__list {
+    .indent();
+    padding-top: 6%;
+    width: 100%;
   }
 
   .page-footer__logo {
     width: 102px;
     height: 34px;
-    margin: auto;
+  }
+
+  .page-footer__logo-hover .footer__logo-image,
+  .page-footer__logo:hover .footer__logo-image,
+  .page-footer__logo-focus .footer__logo-image,
+  .page-footer__logo:focus .footer__logo-image {
+    fill: @hover-color;
+  }
+
+  .page-footer__logo-active .footer__logo-image,
+  .page-footer__logo:active .footer__logo-image {
+    fill: @hover-color;
+    opacity: 0.3;
+  }
+
+  .copyright {
+    width: 30%;
   }
 
   .copyright__flex {
     width: 100%;
+    margin: 0;
+    padding: 0.5em;
   }
 
-  .footer__logo-image-hover path,
-  .footer__logo-image:hover path,
-  .footer__logo-image-focus path,
-  .footer__logo-image:focus path {
-    fill: @hover-color;
-  }
-
-  .footer__logo-image-active path,
-  .footer__logo-image:active path {
-    fill: @hover-color;
-    opacity: 0.3;
+  .copyright__text {
+    margin-top: 0.5em;
   }
 }
 
-@media screen and (min-width: 1250px) {
+@media screen and (min-width: @desktop-width) {
   .page-footer {
     padding: 4%;
+
     box-sizing: border-box;
     flex-direction: row;
     flex-wrap: wrap;
@@ -135,18 +168,40 @@
 
   .page-footer__container {
     padding: 0;
-    flex-grow: 0;
+  }
+
+  .logo-cont {
+    padding-top: 0.5em;
+    margin-right: 95px;
   }
 
   .copyright {
-    width: 16%;
+    width: 20%;
+  }
+
+  .copyright__flex {
+    width: 100%;
+    margin: 0;
+    padding: 0.5em;
+    padding-right: 0;
+    padding-left: 1em;
+  }
+
+  .copyright__text {
+    font-size: 18px;
+  }
+
+  .copyright__span {
+    padding: 0;
   }
 
   .social {
-    width: 11.6%;
+    width: 14%;
+    margin-right: 0.5%;
   }
 
   .social__list {
     width: 100%;
+    padding-top: 9%;
   }
 }

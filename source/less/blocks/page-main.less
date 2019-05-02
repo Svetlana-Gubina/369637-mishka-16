@@ -3,70 +3,128 @@
 }
 
 .page-main__title {
-  width: 100%;
+  width: 74%;
   box-sizing: border-box;
-  margin: 0;
-  padding-top: 20%;
-  padding-bottom: 4.5em;
-  padding-left: 7%;
-  padding-right: 7%;
+  margin: 0 auto;
+  padding-top: 22%;
+  padding-bottom: 40%;
+
   text-align: center;
-  font-size: 27px;
+  font-size: 30px;
   font-weight: 700;
   line-height: 1;
 }
 
-.page-main__span {
+.page-main__container {
+  width: 100%;
+  .indent();
+}
+
+.page-main__container-index {
+  background-image: url("../../img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+}
+
+.page-main__border {
   display: none;
-  color: @text-color;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 1.6;
 }
 
 @media screen and (min-width: @tablet-width) {
-  .page-main {
-    position: relative;
-  }
-
   .page-main__title {
     margin: 0 auto;
-    margin-top: 21.22%;
-
     padding: 0;
-    padding-bottom: 8.5em;
+    padding-top: 21%;
+    padding-bottom: 50%;
     font-size: 43px;
     font-weight: 700;
     line-height: 1;
   }
 
-  .page-main__span {
+  .page-main__container {
+    position: relative;
+  }
+
+  .page-main__container-index {
+    background-image: url("../../img/hero-tablet@1x.jpg");
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: 150% 100%;
+  }
+
+  .page-main__container-order {
+    margin-bottom: 6%;
+  }
+
+  .page-main__container-cat {
+    margin-bottom: 10%;
+  }
+
+  .order__span {
+    margin-top: 2%;
+  }
+
+  .catalog__span {
+    margin-top: -2%;
+  }
+
+  .page-main__border {
     display: block;
-    position: absolute;
-    top: -120px;
-    right: 6.5%;
+    width: 100%;
+    .indent();
+    height: 24px;
+    margin: 0;
+    margin-top: -20px;
+    padding: 0;
+    z-index: 10;
+  }
+
+  .page-main__border-order,
+  .page-main__border-cat {
+    bottom: 24px;
+  }
+
+  .page-main__border-image {
+    width: 100%;
   }
 }
 
 @media screen and (min-width: @desktop-width) {
-  .page-main {
-    position: relative;
+  .page-main__container {
+    max-width: 100%;
+  }
+
+  .page-main__container-index {
+    background-image: url("../../img/hero-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 0 -5%;
+  }
+
+  .page-main__container-order {
+    margin-bottom: 8.5%;
+  }
+
+  .page-main__container-cat {
+    margin-bottom: 10%;
   }
 
   .page-main__title {
     margin: 0 auto;
-    margin-top: 14%;
     padding: 0;
-    padding-bottom: 6.5em;
-    font-size: 53px;
+    padding-top: 14%;
+    padding-bottom: 31%;
+    font-size: 54px;
     font-weight: 700;
     line-height: 1;
   }
 
-  .page-main__span {
-    display: block;
-    position: absolute;
-    top: -100px;  //временно для сетки
-    right: 4%;
+  .page-main__border {
+    height: 34px;
+  }
+
+  .page-main__border-order,
+  .page-main__border-cat {
+    bottom: 34px;
   }
 }
