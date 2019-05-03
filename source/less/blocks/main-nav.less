@@ -89,15 +89,14 @@
 }
 
 .main-nav__toggle {
+  .indent();
   position: absolute;
-  right: 13%;
-
+  top: 30%;
+  right: 10%;
   border: none;
   font-size: 0;
 
   width: 21px;
-  /*Открытое меню*/
-  top: 50%;
   background-color: transparent;
 
   /*Закрытое меню
@@ -106,41 +105,10 @@
   background-color: black;*/
 }
 
-.main-nav__toggle::before,
-.main-nav__toggle::after {
-  content: "";
-  width: 21px;
-  height: 2px;
-  position: absolute;
-  background-color: black;
+.main-nav__toggle-open {
+  display: none;
 }
 
-/*Закрытое меню
-.main-nav__toggle::before {
-  top: 6px;
-  left: 0;
-}
-
-.main-nav__toggle::after {
-  bottom: 6px;
-  left: 0;
-}*/
-
-/*Открытое меню*/
-
-.main-nav__toggle::before {
-  width: 25px;
-  top: 0;
-  left: 0;
-  transform: rotate(45deg);
-}
-
-.main-nav__toggle::after {
-  width: 25px;
-  bottom: 0;
-  left: 0;
-  transform: rotate(-45deg);
-}
 
 @media screen and (min-width: @tablet-width) {
   .main-nav {
