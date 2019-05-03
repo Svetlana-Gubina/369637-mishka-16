@@ -80,6 +80,9 @@ gulp.task('images', function() {
   gulp.task('webp', function() {
   return gulp.src('source/img/**/*.{png,jpg}')
   .pipe(webp({quality: 90}))
+  .pipe(rename({
+    extname: ".webp"
+  }))
   .pipe(gulp.dest('build/img'));
   });
 
@@ -122,6 +125,8 @@ gulp.task('images', function() {
     'css',
     'sprite',
     'compress',
+    'images',
+    'webp',
     'html'
   ));
 
