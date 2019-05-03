@@ -2,7 +2,6 @@
   width: 100%;
 }
 
-
 .order__title {
   width: 100%;
   box-sizing: border-box;
@@ -31,7 +30,10 @@
 }
 
 .order__text-small {
-  margin-bottom: 8%;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.9;
+  margin-bottom: 6%;
 }
 
 /* FORM*/
@@ -53,7 +55,7 @@
   padding-bottom: 0.9em;
   box-sizing: border-box;
 
-  margin-bottom: 10%;
+  margin-bottom: 15%;
 }
 
 .order__form-fieldset {
@@ -109,7 +111,7 @@
 }
 
 .order__form-field-checkbox {
-  margin-bottom: 6%;
+  margin-bottom: 8%;
 }
 
 .legend-span {
@@ -281,18 +283,23 @@
 .order__form-label {
   display: block;
   margin: 0;
-  padding-top: 10px;
+  padding-top: 1em;
 
   font-size: 17px;
   font-weight: 700;
-  line-height: 1;
+  line-height: 0.9;
 }
 
 .personal-info-flex {
   margin-top: -2%;
 
   padding-bottom: 0;
-  margin-bottom: 12%;
+  margin-bottom: 11%;
+}
+
+.personal-info-flex .order__form-label {
+  padding-top: 0.5em;
+  padding-bottom: 0.1em;
 }
 
 .personal-info-field {
@@ -306,6 +313,10 @@
 
 .personal-info-special-add {
   margin-bottom: 0;
+}
+
+.personal-info-special-email {
+  padding-bottom: 5%;
 }
 
 .flex__add {
@@ -325,7 +336,15 @@
 }
 
 .legend-label {
-  margin-bottom: 5px;
+  margin-bottom: 1em;
+}
+
+.legend-label-tel,
+.legend-label-email,
+.legend-label-add {
+  margin-bottom: 0.1em;
+  font-size: 16px;
+  line-height: 1;
 }
 
 .flex__contacts {
@@ -622,9 +641,9 @@
   }
 
   .fieldset__color {
-    padding-top: 3%;
+    padding-top: 4%;
     padding-right: 4%;
-    padding-bottom: 2%;
+    padding-bottom: 3%;
     margin-bottom: 4%;
   }
 
