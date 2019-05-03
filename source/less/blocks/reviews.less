@@ -146,6 +146,13 @@
   }
 }
 
+@media (min-width: @tablet-width) and (min-resolution: 144dpi),
+  (min-width: @tablet-width) and (min-resolution: 1.5dppx) {
+  .reviews {
+    background-image: url("../img/review@2x.jpg");
+  }
+}
+
 @media screen and (min-width: @desktop-width) {
   .reviews {
     width: 91.3%;
@@ -160,7 +167,7 @@
   }
 
   .reviews__title {
-    font-size: 53px;
+    font-size: 50px;
     font-weight: 700;
     line-height: 1;
     margin: 0;
@@ -187,5 +194,12 @@
     bottom: 22%;
     right: 0;
     margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) and (min-resolution: 144dpi),
+  (min-width: @desktop-width) and (min-resolution: 1.5dppx) {
+  .reviews {
+    background-image: url("../img/review@2x.jpg");
   }
 }
