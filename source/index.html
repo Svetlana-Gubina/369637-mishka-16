@@ -6,21 +6,26 @@
         <title>HTML Academy: Мишка</title>
         <link rel="preload" href="fonts/opensans.woff2" as="font">
         <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+        <link rel="stylesheet" href="css/normalize.min.css">
         <link href="css/style.min.css" rel="stylesheet">
+        <script>
+          document.createElement( "picture" );
+        </script>
+        <script src="js/libs/picturefill.min.js" async></script>
     </head>
     <body>
-     <div style="display: none;">
-       <include src="build/img/sprite.svg"></include>
-     </div>
-     <div class="wrapper">
-         <header class="page-header">
+      <div style="display: none;">
+        <include src="build/img/sprite.svg"></include>
+      </div>
+      <div class="wrapper">
+          <header class="page-header">
             <nav class="main-nav">
               <div class="main-nav-flex main-nav-flex-logo">
                   <a class="logo page-header__logo"><svg class="logo__mobile logo__image" xmlns="http://www.w3.org/2000/svg" width="85.589px" height="35.034px"><use xlink:href="img/sprite.svg#icon-logo-mobile"></use></svg>
                   <svg class="logo__tablet logo__image" xmlns="http://www.w3.org/2000/svg" width="112.389px" height="46.087px"><use xlink:href="img/sprite.svg#icon-logo-tablet"></use></svg>
                   <svg class="logo__desktop logo__image" xmlns="http://www.w3.org/2000/svg" width="148.051px" height="72.707px"><use xlink:href="img/sprite.svg#icon-logo-desktop"></use></svg>
                   </a>
-                  <button class="main-nav__toggle" type="button">Открыть/Закрыть меню
+                  <button class="main-nav__toggle visually-hidden" type="button">Открыть/Закрыть меню
                     <span class="main-nav__toggle-open"><svg class="main-nav__toggle-open-icon" xmlns="http://www.w3.org/2000/svg" width="20px" height="14px"><use xlink:href="img/sprite.svg#icon-menu-open"></use></svg></span>
                     <span class="main-nav__toggle-close"><svg class="main-nav__toggle-close-icon"xmlns="http://www.w3.org/2000/svg" width="21px" height="21px"><use xlink:href="img/sprite.svg#icon-menu-close"></use></svg></span>
                   </button>
@@ -42,7 +47,7 @@
               </div>
             </nav>
           </header>
-         <main class="page-main">
+          <main class="page-main">
             <div class="page-main__container page-main__container-index">
                 <h1 class="page-main__title">Милые штуки ручной<br>
                   работы для дома
@@ -95,7 +100,7 @@
                   <p class="promo__price">Цена: 990 руб.</p>
                   <span class="promo__button button">Заказать</span>
               </section>
-             <section class="about-us section">
+              <section class="about-us section">
                   <h2 class="about-us__title title">Коротко о нас:</h2>
                   <ul class="about-us__list">
                       <li class="about-us__item about-us__item--eco"><span class="about-us__icon"><svg class="about-us__icon-image" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" width="31.972px" height="37.301px"><use xlink:href="img/sprite.svg#icon-feature-flower"></use></svg></span>Экологически<br>
@@ -209,6 +214,6 @@
               </div>
           </footer>
       </div>
-      <script src="js/modal.js"></script>
+      <script src="js/modal.min.js"></script>
     </body>
 </html>
