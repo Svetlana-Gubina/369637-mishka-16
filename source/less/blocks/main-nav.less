@@ -31,7 +31,7 @@
 
 .main-nav__link {
   display: block;
-  color: #000000;
+  color: @black-color;
   margin: auto;
   padding-top: 8%;
   padding-bottom: 8%;
@@ -136,6 +136,7 @@
 
   .main-nav__item-search .main-nav__link {
     font-size: 0;
+    margin: auto;
   }
 
   .main-nav__item-cart {
@@ -177,8 +178,7 @@
   }
 
   .main-nav__search-span {
-    margin: auto;
-    margin-left: 38%;
+    .indent();
   }
 
   .main-nav-delivery {
