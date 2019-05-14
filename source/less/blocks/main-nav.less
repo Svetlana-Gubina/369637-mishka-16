@@ -31,7 +31,7 @@
 
 .main-nav__link {
   display: block;
-  color: #000000;
+  color: @black-color;
   margin: auto;
   padding-top: 8%;
   padding-bottom: 8%;
@@ -57,7 +57,7 @@
 
 .main-nav__item-search .main-nav__link,
 .main-nav__item-cart .main-nav__link {
-  margin-left: 20%;
+  margin-left: 14%;
 }
 
 .main-nav__cart-icon,
@@ -91,19 +91,26 @@
 .main-nav__toggle {
   .indent();
   position: absolute;
-  top: 30%;
+  top: 40%;
   right: 10%;
-  border: none;
+  border: 0 none;
   font-size: 0;
-
   width: 21px;
+  height: 14px;
   background-color: transparent;
+  background-image: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='19.958px' height='14px' viewBox='0 0 19.958 14' enable-background='new 0 0 19.958 14' xml:space='preserve'%3E%3Crect fill='%23231F20' width='19.958' height='2'/%3E%3Crect y='6' fill='%23231F20' width='19.958' height='2'/%3E%3Crect y='12' fill='%23231F20' width='19.958' height='2'/%3E%3C/svg%3E");
 }
 
-.main-nav__toggle-open {
+.main-nav__toggle-close {
+  top: 35%;
+  width: 21px;
+  height: 21px;
+  background-image: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='20.514px' height='20.512px' viewBox='0 0 20.514 20.512' enable-background='new 0 0 20.514 20.512' xml:space='preserve'%3E%3Cpolygon fill='%23231F20' points='20.513,1.414 19.099,0 10.256,8.842 1.414,0 0,1.414 8.842,10.256 0,19.098 1.414,20.512 10.256,11.67 19.099,20.512 20.513,19.098 11.671,10.256 '/%3E%3C/svg%3E");
+}
+
+.menu-close {
   display: none;
 }
-
 
 @media screen and (min-width: @tablet-width) {
   .main-nav {
@@ -117,6 +124,7 @@
   .main-nav__item {
     border: none;
     box-shadow: none;
+    align-items: center;
   }
 
   .main-nav__item-search {
@@ -129,6 +137,9 @@
 
   .main-nav__item-search .main-nav__link {
     font-size: 0;
+    margin: auto;
+    padding-top: 38%;
+    padding-bottom: 38%;
   }
 
   .main-nav__item-cart {
@@ -170,8 +181,7 @@
   }
 
   .main-nav__search-span {
-    margin: auto;
-    margin-left: 38%;
+    .indent();
   }
 
   .main-nav-delivery {
@@ -224,11 +234,15 @@
 
   .main-nav__item-cat .main-nav__link,
   .main-nav__item-order .main-nav__link {
+    margin-top: auto;
+    margin-bottom: auto;
     padding-right: 2em;
     padding-left: 2.5em;
   }
 
   .main-nav__item-cart .main-nav__link {
+    margin-top: auto;
+    margin-bottom: auto;
     margin-left: 10%;
   }
 

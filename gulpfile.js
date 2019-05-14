@@ -127,7 +127,7 @@ gulp.task('images', function() {
   // package (see the check-for-favicon-update task below).
   gulp.task('generate-favicon', function(done) {
   realFavicon.generateFavicon({
-  masterPicture: 'source/img/htmlacademy.svg',
+  masterPicture: 'build/img/htmlacademy.svg',
   dest: 'build/img',
   iconsPath: '/',
   design: {
@@ -191,7 +191,7 @@ gulp.task('images', function() {
   // this task whenever you modify a page. You can keep this task
   // as is or refactor your existing HTML pipeline.
   gulp.task('inject-favicon-markups', function() {
-  return gulp.src([ 'source//*.html' ])
+  return gulp.src([ 'build//*.html' ])
   		.pipe(realFavicon.injectFaviconMarkups(JSON.parse(fs.readFileSync(FAVICON_DATA_FILE)).favicon.html_code))
   		.pipe(gulp.dest('build/'));
   });
@@ -234,7 +234,9 @@ gulp.task('images', function() {
     'compress',
     'images',
     'webp',
-    'html'
+    'html',
+    'generate-favicon',
+    'inject-favicon-markups'
   ));
 
   gulp.task('start', gulp.series('build', 'server'));
