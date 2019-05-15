@@ -54,6 +54,7 @@
 }
 
 .contacts__text {
+  width: 50%;
   display: table-cell;
   .indent();
   color: @text-color;
@@ -63,13 +64,17 @@
   text-align: left;
   font-weight: 400;
   line-height: 2;
+  box-sizing: border-box;
 }
 
 .contacts__text-info {
-  max-width: 75%;
-  padding-left: 1.125em;
+  padding-left: 1em;
   text-align: left;
   vertical-align: top;
+}
+
+.contacts__text-adress {
+  padding-right: 2em;
 }
 
 .contacts__link {
@@ -148,17 +153,12 @@
 
   .contacts__wrapper {
     display: flex;
-    flex: 1 1 auto;
-    width: 95%;
+    width: 85%;
     box-sizing: border-box;
     margin: 0 auto;
     margin-left: 6%;
     margin-bottom: 8%;
     padding: 0;
-  }
-
-  .contacts__br {
-    display: none;
   }
 
   .contacts__title {
@@ -183,19 +183,21 @@
   }
 
   .contacts__text {
+    width: auto;
     font-size: 17px;
     line-height: 1.7;
     padding: 0;
-    padding-right: 1.2em;
+    padding-left: 1em;
+    padding-right: 1em;
     text-align: left;
   }
 
-  .contacts__wrapper-row-second .contacts__text {
-    padding-left: 2em;
+  .contacts__text-email {
+    min-width: 100px;
   }
 
-  .contacts__wrapper-row-second .contacts__text-info {
-    padding-left: 1.5em;
+  .contacts__text-adress {
+    padding-right: 2em;
   }
 
   .contacts__map {
@@ -287,9 +289,17 @@
 
   .contacts__text {
     display: table-cell;
+    min-width: 60%;
     padding-bottom: 2em;
     font-size: 17px;
     line-height: 1.7;
+  }
+
+  .contacts__text-email {
+    min-width: 90px;
+    padding-right: 0.5em;
+    padding-left: 0;
+    box-sizing: border-box;
   }
 
   .contacts__wrapper-row-second .contacts__text,

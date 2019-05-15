@@ -1,0 +1,104 @@
+.personal-info__flex {
+  margin-top: -2%;
+
+  padding-bottom: 0;
+  margin-bottom: 11%;
+}
+
+.personal-info__flex .order__form-label {
+  padding-top: 0.5em;
+  padding-bottom: 0.1em;
+}
+
+.personal-info__field {
+  padding: 0;
+  margin-bottom: 6%;
+}
+
+.personal-info__special {
+  position: relative;
+  margin-bottom: 14%;
+}
+
+.personal-info__special-add {
+  margin-bottom: 0;
+}
+
+.personal-info__special-email {
+  padding-bottom: 5%;
+}
+
+.personal-info__span {
+  position: absolute;
+  top: 45%;
+  right: 1%;
+}
+
+.personal-info__icon-tel,
+.personal-info__icon-email {
+  fill: @black-color;
+  opacity: 0.2;
+}
+
+@media screen and (min-width: @tablet-width) {
+  .personal-info {
+    padding: 0;
+    padding-top: 6%;
+  }
+
+  .personal-info__field {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin: 0;
+    margin-bottom: 5%;
+    padding: 0;
+  }
+
+  .personal-info__special {
+    position: relative;
+    margin: 0;
+    margin-bottom: 5%;
+    padding: 0;
+  }
+
+  .personal-info__field .order__form-label {
+    margin-right: 5%;
+  }
+
+  .personal-info__span {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+  }
+}
+
+@media screen and (min-width: @desktop-width) {
+  .personal-info {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .personal-info__flex {
+    margin-bottom: 4.5%;
+  }
+
+  .personal-info__field {
+    margin-bottom: 3%;
+  }
+
+  .personal-info__flex .order__form-input-text {
+    padding-left: 0.6em;
+    font-size: 18px;
+  }
+
+  .personal-info__span {
+    top: 25%;
+    right: 0;
+  }
+
+  .personal-info__special {
+    margin-bottom: 5%;
+  }
+}

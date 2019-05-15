@@ -1,0 +1,34 @@
+.modal-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -350px;
+  margin-left: -50%;
+
+  z-index: 50;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.2;
+  min-width: 320px;
+
+  padding: 1.2em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  box-sizing: border-box;
+  background-color: @white-color;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+  border: 1px solid #c6c6c6;
+}
+
+@media screen and (min-width: @tablet-width) {
+  .modal-popup {
+    margin-top: -350px;
+    margin-left: -150px;
+  }
+}
+
+@media screen and (min-width: @desktop-width) {
+  .modal-popup {
+    margin-left: -200px;
+  }
+}

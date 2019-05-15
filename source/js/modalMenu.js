@@ -4,8 +4,8 @@ var BREAKPOINTS = {
   tablet: '768px'
 };
 var toggle = document.querySelector(".main-nav__toggle");
-var menuItemTop = document.querySelector(".main-nav-flex-tablet");
-var menuItemBottom = document.querySelector(".main-nav-flex-search");
+var menuItemTop = document.querySelector(".main-nav__flex-tablet");
+var menuItemBottom = document.querySelector(".main-nav__flex-search");
 
 var handleBreackpointChange = function (event) {
   if (event.matches) {

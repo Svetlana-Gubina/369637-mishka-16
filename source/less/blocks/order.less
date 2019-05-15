@@ -43,8 +43,8 @@
   border: 0 none;
 }
 
-.fieldset__pad,
-.fieldset__color {
+.order__form-pad,
+.order__form-color {
   margin-bottom: 4%;
 }
 
@@ -98,11 +98,11 @@
   margin-bottom: 8%;
 }
 
-.legend-span {
+.order__form-legend-span {
   display: inline-block;
 }
 
-.legend-span::after {
+.order__form-legend-span::after {
   content: "";
   position: absolute;
   top: 30%;
@@ -274,81 +274,39 @@
   line-height: 0.9;
 }
 
-.personal-info-flex {
-  margin-top: -2%;
-
-  padding-bottom: 0;
-  margin-bottom: 11%;
-}
-
-.personal-info-flex .order__form-label {
-  padding-top: 0.5em;
-  padding-bottom: 0.1em;
-}
-
-.personal-info-field {
-  padding: 0;
-  margin-bottom: 6%;
-}
-
-.personal-info-special {
-  position: relative;
-  margin-bottom: 14%;
-}
-
-.personal-info-special-add {
-  margin-bottom: 0;
-}
-
-.personal-info-special-email {
-  padding-bottom: 5%;
-}
-
-.flex__add {
+.order__form-flex-add {
   margin-top: 10%;
 }
 
-.personal-info__span {
-  position: absolute;
-  top: 45%;
-  right: 1%;
-}
-
-.personal-info__icon-tel,
-.personal-info__icon-email {
-  fill: @black-color;
-  opacity: 0.2;
-}
-
-.legend-label {
+.order__form-legend-label {
   margin-bottom: 1em;
 }
 
-.legend-label-tel,
-.legend-label-email,
-.legend-label-add {
+.order__form-legend-tel,
+.order__form-legend-email,
+.order__form-legend-add {
   margin-bottom: 0.1em;
   font-size: 16px;
   line-height: 1;
 }
 
-.flex__contacts {
+.order__form-flex-contacts {
   margin: 0;
   padding: 0;
 }
 
-.input-grey-hover .personal-info__icon-tel,
-.input-grey:hover .personal-info__icon-tel,
-.input-grey-hover .personal-info__icon-email,
-.input-grey:hover .personal-info__icon-email,
-.input-grey-focus .personal-info__icon-tel,
-.input-grey:focus .personal-info__icon-tel,
-.input-grey-focus .personal-info__icon-email,
-.input-grey:focus .personal-info__icon-email {
+.order__form-input-grey-hover .personal-info__icon-tel,
+.order__form-input-grey:hover .personal-info__icon-tel,
+.order__form-input-grey-hover .personal-info__icon-email,
+.order__form-input-grey:hover .personal-info__icon-email,
+.order__form-input-grey-focus .personal-info__icon-tel,
+.order__form-input-grey:focus .personal-info__icon-tel,
+.order__form-input-grey-focus .personal-info__icon-email,
+.order__form-input-grey:focus .personal-info__icon-email {
   fill: @hover-color;
 }
 
-.form__footer {
+.order__form-footer {
   width: 100%;
   .indent();
   .flex-column;
@@ -405,7 +363,7 @@
     top: 1%;
   }
 
-  .legend-span {
+  .order__form-legend-span {
     display: none;
   }
 
@@ -414,26 +372,21 @@
     margin-bottom: 0;
   }
 
-  .fieldset__pad {
+  .order__form-pad {
     margin: 0;
     padding: 6%;
     padding-bottom: 4%;
     box-sizing: border-box;
   }
 
-  .fieldset__color {
+  .order__form-color {
     padding: 6%;
     padding-top: 5%;
     padding-right: 4%;
     background-color: @icon-grey-color;
   }
 
-  .personal-info {
-    padding: 0;
-    padding-top: 6%;
-  }
-
-  .fieldset__add {
+  .order__form-add {
     width: 100%;
     padding: 6%;
     padding-bottom: 8%;
@@ -446,23 +399,23 @@
     flex-wrap: wrap;
   }
 
-  .flex__pad {
+  .order__form-flex-pad {
     margin-left: 28%;
     margin-top: -10%;
   }
 
-  .flex__color {
+  .order__form-flex-color {
     margin-left: 26%;
     margin-top: 0;
   }
 
-  .flex__name {
+  .order__form-flex-name {
     padding-right: 6%;
     margin-bottom: 6%;
     margin-left: 28%;
   }
 
-  .flex__contacts {
+  .order__form-flex-contacts {
     width: 100%;
     padding: 6%;
     padding-top: 6.5%;
@@ -470,7 +423,7 @@
     background-color: @icon-grey-color;
   }
 
-  .flex__add {
+  .order__form-flex-add {
     margin-top: 0;
     padding-top: 6%;
   }
@@ -493,14 +446,14 @@
     left: 6%;
   }
 
-  .legend-label-tel,
-  .legend-label-email {
+  .order__form-legend-tel,
+  .order__form-legend-email {
     position: absolute;
     top: 40%;
     left: -32%;
   }
 
-  .legend-label-add {
+  .order__form-legend-add {
     position: absolute;
     top: 18%;
     left: -30%;
@@ -518,7 +471,7 @@
     margin-bottom: 2.5%;
   }
 
-  .flex__pad .order__form-field {
+  .order__form-flex-pad .order__form-field {
     margin-bottom: 6%;
     width: 100%;
   }
@@ -554,34 +507,13 @@
     border: 2px solid @text-color;
   }
 
-  .personal-info-field {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    margin: 0;
-    margin-bottom: 5%;
-    padding: 0;
-  }
-
-  .personal-info-special {
-    position: relative;
-    margin: 0;
-    margin-bottom: 5%;
-    padding: 0;
-  }
-
   .order__form-label {
     font-size: 19px;
     font-weight: 700;
     line-height: 1;
   }
 
-  .personal-info-field .order__form-label {
-    margin-right: 5%;
-  }
-
-  .input-grey {
+  .order__form-input-grey {
     background-color: @icon-grey-color;
   }
 
@@ -603,13 +535,7 @@
     left: -1.8%;
   }
 
-  .personal-info__span {
-    position: absolute;
-    top: 20%;
-    right: 5%;
-  }
-
-  .form__footer {
+  .order__form-footer {
     width: 100%;
     .indent();
     flex-direction: row;
@@ -653,12 +579,8 @@
     padding-bottom: 9%;
   }
 
-  .page-main__border-order {
-    margin-bottom: 9%;
-  }
-
   .order__text {
-    padding-left: 20%;
+    padding-left: 19.5%;
     padding-right: 20%;
     margin-bottom: 6.5%;
   }
@@ -668,72 +590,76 @@
     right: 6%;
   }
 
-  .fieldset__color {
-    padding-top: 4%;
-    padding-right: 4%;
-    padding-bottom: 3%;
-    margin-bottom: 5%;
+  .order__form-pad {
+    padding-bottom: 3.5%;
   }
 
-  .fieldset__pad .order__form-field {
+  .order__form-color {
+    padding-top: 4.1%;
+    padding-right: 3.5%;
+    padding-bottom: 2.5%;
+    margin-bottom: 6.3%;
+  }
+
+  .order__form-pad .order__form-field {
     margin-bottom: 1%;
   }
 
-  .fieldset__color .order__form-field {
+  .order__form-color .order__form-field {
     padding-top: 0;
   }
 
-  .flex__pad {
-    margin-left: 18%;
+  .order__form-flex-pad {
+    margin-left: 17%;
   }
 
-  .flex__color {
+  .order__form-flex-color {
     margin-left: 16%;
   }
 
-  .flex__name {
+  .order__form-flex-name {
     margin-left: 20%;
-    margin-bottom: 5%;
+    margin-bottom: 0;
     padding-bottom: 0;
   }
 
-  .flex__contacts {
-    padding-top: 4%;
+  .order__form-flex-contacts {
+    padding-top: 3.5%;
     padding-bottom: 3%;
     padding-left: 20%;
   }
 
-  .flex__contacts .personal-info-special {
+  .order__form-flex-contacts .personal-info__special {
     margin-bottom: 3%;
   }
 
   .order__form-field-checkbox {
     width: 30%;
-    margin-bottom: 1.5%;
+    margin-bottom: 2.1%;
   }
 
-  .fieldset__add {
+  .order__form-add {
     width: 100%;
     padding: 6%;
-    padding-top: 4%;
+    padding-top: 3.5%;
     padding-right: 20%;
-    padding-bottom: 4%;
+    padding-bottom: 4.5%;
     padding-left: 20%;
   }
 
-  .flex__contacts,
-  .flex__name {
+  .order__form-flex-contacts,
+  .order__form-flex-name {
     padding-right: 20%;
   }
 
-  .legend-label-tel,
-  .legend-label-email {
-    top: 35%;
+  .order__form-legend-tel,
+  .order__form-legend-email {
+    top: 38%;
     left: -16%;
   }
 
-  .legend-label-add {
-    top: 10%;
+  .order__form-legend-add {
+    top: 15%;
     left: -16%;
   }
 
@@ -746,17 +672,17 @@
 
   .order__form-radio:checked + label::after {
     top: 0;
-    left: 0;
+    left: -0.2%;
     background-color: @radio-color;
   }
 
   .order__form-legend-type {
-    top: 1%;
+    top: 0;
     left: 10%;
   }
 
   .order__form-legend-name {
-    top: 1%;
+    top: -0.5%;
     left: 10%;
   }
 
@@ -765,20 +691,12 @@
     left: 10%;
   }
 
-  .personal-info {
-    padding-top: 0;
-    padding-bottom: 0;
+  .order__form-input-grey {
+    padding-left: 0.6em;
+    font-size: 18px;
   }
 
-  .personal-info-field {
-    margin-bottom: 3%;
-  }
-
-  .personal-info__span {
-    right: 2%;
-  }
-
-  .form__footer {
+  .order__form-footer {
     width: 100%;
     .indent();
     flex-direction: row;

@@ -4,8 +4,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>HTML Academy: Мишка</title>
-        <link rel="preload" href="fonts/opensans.woff2" as="font">
-        <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+        <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+        <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
         <link rel="stylesheet" href="css/normalize.min.css">
         <link href="css/style.min.css" rel="stylesheet">
         <script>
@@ -20,26 +20,26 @@
       <div class="wrapper">
           <header class="page-header">
             <nav class="main-nav">
-              <div class="main-nav-flex main-nav-flex-logo">
-                  <a class="logo page-header__logo"><svg class="logo__mobile logo__image" xmlns="http://www.w3.org/2000/svg" width="85.589" height="35.034"><use xlink:href="img/sprite.svg#icon-logo-mobile"></use></svg>
-                  <svg class="logo__tablet logo__image" xmlns="http://www.w3.org/2000/svg" width="112.389px" height="46.087"><use xlink:href="img/sprite.svg#icon-logo-tablet"></use></svg>
-                  <svg class="logo__desktop logo__image" xmlns="http://www.w3.org/2000/svg" width="148.051px" height="72.707"><use xlink:href="img/sprite.svg#icon-logo-desktop"></use></svg>
+              <div class="main-nav__flex main-nav__flex-logo">
+                  <a class="page-header__logo"><svg class="page-header__logo-mobile" xmlns="http://www.w3.org/2000/svg" width="85.589" height="35.034"><use xlink:href="#icon-logo-mobile"></use></svg>
+                  <svg class="page-header__logo-tablet" xmlns="http://www.w3.org/2000/svg" width="112.389px" height="46.087"><use xlink:href="#icon-logo-tablet"></use></svg>
+                  <svg class="page-header__logo-desktop" xmlns="http://www.w3.org/2000/svg" width="148.051px" height="72.707"><use xlink:href="#icon-logo-desktop"></use></svg>
                   </a>
                   <button class="main-nav__toggle visually-hidden" type="button">Открыть/Закрыть меню</button>
               </div>
-              <div class="main-nav-flex main-nav-flex-tablet">
+              <div class="main-nav__flex main-nav__flex-tablet">
                   <div class="main-nav__item main-nav__item-cat"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></div>
                   <div class="main-nav__item main-nav__item-order"><a class="main-nav__link" href="form.html">Вязание на заказ</a></div>
               </div>
-              <div class="main-nav-flex main-nav-flex-desktop">
+              <div class="main-nav__flex main-nav__flex-desktop">
                   <div class="main-nav__item main-nav__item-new"><a class="main-nav__link" href="new.html">Новые поступления</a></div>
                   <div class="main-nav__item main-nav__item-sale"><a class="main-nav__link" href="sale.html">Распродажа</a></div>
               </div>
-              <div class="main-nav-flex main-nav-flex-search">
-                  <div class="main-nav__item main-nav__item-search"><a class="main-nav__link" href="search.html"><span class="main-nav__search-span"><svg class="main-nav__search-icon" xmlns="http://www.w3.org/2000/svg" width="17.6" height="17.6"><use xlink:href="img/sprite.svg#icon-search"></use></svg></span>Поиск по сайту</a></div>
-                  <div class="main-nav__item main-nav__item-cart"><a class="main-nav__link" href="cart.html"><span class="main-nav__cart-span"><svg class="main-nav__cart-icon" xmlns="http://www.w3.org/2000/svg" width="20.294" height="18.849"><use xlink:href="img/sprite.svg#icon-cart"></use></svg></span>Корзина: пока пуста</a></div>
+              <div class="main-nav__flex main-nav__flex-search">
+                  <div class="main-nav__item main-nav__item-search"><a class="main-nav__link" href="search.html"><span class="main-nav__search-span"><svg class="main-nav__search-icon" xmlns="http://www.w3.org/2000/svg" width="17.6" height="17.6"><use xlink:href="#icon-search"></use></svg></span>Поиск по сайту</a></div>
+                  <div class="main-nav__item main-nav__item-cart"><a class="main-nav__link" href="cart.html"><span class="main-nav__cart-span"><svg class="main-nav__cart-icon" xmlns="http://www.w3.org/2000/svg" width="20.294" height="18.849"><use xlink:href="#icon-cart"></use></svg></span>Корзина: пока пуста</a></div>
               </div>
-              <div class="main-nav-flex main-nav-delivery">
+              <div class="main-nav__flex main-nav__delivery">
                 <span class="main-nav__item-delivery">Бесплатная доставка по России</span>
               </div>
             </nav>
@@ -52,24 +52,25 @@
               <section class="product-types">
                   <h2 class="visually-hidden">Типы продукции</h2>
                   <ul class="product-types__list">
-                      <li class="product-types__item"><a class="product-types__link product-types__link-accessories" href="accessories.html"><p class="product-types__link-text">Предметы
-                          интерьера</p><span class="product-types__span"><svg class="product-types__icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" width="40.219" height="62.411"><use xlink:href="img/sprite.svg#icon-interior"></use></svg></span></a>
+                      <li class="product-types__item"><a class="product-types__link product-types__accessories" href="accessories.html"><p class="product-types__link-text">Предметы
+                          интерьера</p><span class="product-types__span"><svg class="product-types__icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" width="40.219" height="62.411"><use xlink:href="#icon-interior"></use></svg></span></a>
                       </li>
-                      <li class="product-types__item"><a class="product-types__link product-types__link-toys" href="toys.html"><p class="product-types__link-text">Детские игрушки</p><span class="product-types__span"><svg class="product-types__icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" width="60" height="59.62"><use xlink:href="img/sprite.svg#icon-toy"></use></svg>
+                      <li class="product-types__item"><a class="product-types__link product-types__toys" href="toys.html"><p class="product-types__link-text">Детские игрушки</p><span class="product-types__span"><svg class="product-types__icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" width="60" height="59.62"><use xlink:href="#icon-toy"></use></svg>
                           </span></a>
                       </li>
                   </ul>
               </section>
               <div class="page-main__border">
-                  <svg class="page-main__border-image" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" width="1150" height="34"><use xlink:href="img/sprite.svg#icon-bg-zigzag-fill"></use></svg>
+                  <svg class="page-main__border-image" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" width="1150" height="34"><use xlink:href="#icon-bg-zigzag-fill"></use></svg>
               </div>
             </div>
 
               <section class="promo section">
-                  <h2 class="promo__title title">Вязаные корзинки</h2>
+                  <h2 class="promo__title">Вязаные корзинки</h2>
                   <span class="promo__span">Товар недели</span>
                   <p class="promo__text">
-                      Экологически чистая пряжа,<br class="promo__text-br"> ручная работа.
+                      Экологически чистая пряжа,
+                      ручная работа.
                       Доступны в шести расцветках, и трех размерах.
                   </p>
                   <table class="promo__table">
@@ -92,7 +93,7 @@
                       <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
                       <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
                       <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
-                      <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, imgtriple-set-mobile@2x.webp 2x">
+                      <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
                       <img class="promo__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки">
                   </picture>
                   </div>
@@ -101,26 +102,26 @@
               </section>
               <section class="about-us section">
                   <div class="about-us__border">
-                      <svg class="about-us__border-image" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" width="1150" height="34"><use xlink:href="img/sprite.svg#icon-bg-zigzag-line"></use></svg>
+                      <svg class="about-us__border-image" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" width="1150" height="34"><use xlink:href="#icon-bg-zigzag-line"></use></svg>
                   </div>
-                  <h2 class="about-us__title title">Коротко о нас:</h2>
+                  <h2 class="about-us__title">Коротко о нас:</h2>
                   <ul class="about-us__list">
-                      <li class="about-us__item about-us__item--eco"><span class="about-us__icon"><svg class="about-us__icon-image" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" width="31.972" height="37.301"><use xlink:href="img/sprite.svg#icon-feature-flower"></use></svg></span>Экологически<br>
+                      <li class="about-us__item about-us__item--eco"><span class="about-us__icon"><svg class="about-us__icon-image" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" width="31.972" height="37.301"><use xlink:href="#icon-feature-flower"></use></svg></span>Экологически<br>
                           чистые материалы
                       </li>
-                      <li class="about-us__item about-us__item--style"><span class="about-us__icon"><svg class="about-us__icon-image" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" width="46.575" height="27.332"><use xlink:href="img/sprite.svg#icon-feature-money"></use></svg></span>Скандинавский стиль <br class="about-us-br">по российской цене
+                      <li class="about-us__item about-us__item--style"><span class="about-us__icon"><svg class="about-us__icon-image" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" width="46.575" height="27.332"><use xlink:href="#icon-feature-money"></use></svg></span>Скандинавский стиль <br class="about-us__br">по российской цене
                       </li>
-                      <li class="about-us__item about-us__item--likes"><span class="about-us__icon"><svg class="about-us__icon-image" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" width="33.05" height="27.857"><use xlink:href="img/sprite.svg#icon-feature-heart"></use></svg></span>Увеличивает лайки<br class="about-us-br"> на фотографиях
+                      <li class="about-us__item about-us__item--likes"><span class="about-us__icon"><svg class="about-us__icon-image" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" width="33.05" height="27.857"><use xlink:href="#icon-feature-heart"></use></svg></span>Увеличивает лайки<br class="about-us__br"> на фотографиях
                       </li>
-                      <li class="about-us__item about-us__item--handmade"><span class="about-us__icon"><svg class="about-us__icon-image" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" width="34.373" height="34.373"><use xlink:href="img/sprite.svg#icon-feature-ball"></use></svg></span>Связано вручную с<br class="about-us-br"> любовью и умилением
+                      <li class="about-us__item about-us__item--handmade"><span class="about-us__icon"><svg class="about-us__icon-image" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" width="34.373" height="34.373"><use xlink:href="#icon-feature-ball"></use></svg></span>Связано вручную с<br class="about-us__br"> любовью и умилением
                       </li>
-                      <li class="about-us__item about-us__item--supp"><span class="about-us__icon"><svg class="about-us__icon-image" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" width="54.156" height="23.183"><use xlink:href="img/sprite.svg#icon-feature-rocket"></use></svg></span>Поддержка отечественного производителя</li>
-                      <li class="about-us__item about-us__item--pack"><span class="about-us__icon"><svg class="about-us__icon-image" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" width="32.666" height="32.486"><use xlink:href="img/sprite.svg#icon-feature-gift"></use></svg></span>Поставляется в<br class="about-us-br"> подарочной упаковке
+                      <li class="about-us__item about-us__item--supp"><span class="about-us__icon"><svg class="about-us__icon-image" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" width="54.156" height="23.183"><use xlink:href="#icon-feature-rocket"></use></svg></span>Поддержка отечественного производителя</li>
+                      <li class="about-us__item about-us__item--pack"><span class="about-us__icon"><svg class="about-us__icon-image" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" width="32.666" height="32.486"><use xlink:href="#icon-feature-gift"></use></svg></span>Поставляется в<br class="about-us__br"> подарочной упаковке
                       </li>
                   </ul>
               </section>
               <section class="reviews section">
-                  <h2 class="reviews__title title">Отзывы</h2>
+                  <h2 class="reviews__title">Отзывы</h2>
                   <blockquote class="reviews__item">
                       <p class="reviews__text">
                           Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек.
@@ -130,27 +131,28 @@
                       <span class="reviews__user-id">@misssssiskras</span>
                   </blockquote>
                   <div class="reviews__toggles">
-                      <a class="reviews__toggle reviews__toggle--prev">Предыдущий отзыв<span class="reviews__toggle-icon"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="26.003"><use xlink:href="img/sprite.svg#icon-left-arrow"></use></svg></span></a>
-                      <a class="reviews__toggle reviews__toggle--next">Следующий отзыв<span class="reviews__toggle-icon"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="26.003"><use xlink:href="img/sprite.svg#icon-right-arrow"></use></svg></span></a>
+                      <a class="reviews__toggle reviews__toggle--prev">Предыдущий отзыв<span class="reviews__toggle-icon"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="26.003"><use xlink:href="#icon-left-arrow"></use></svg></span></a>
+                      <a class="reviews__toggle reviews__toggle--next">Следующий отзыв<span class="reviews__toggle-icon"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="26.003"><use xlink:href="#icon-right-arrow"></use></svg></span></a>
                   </div>
                   <a class="reviews__button button" href="review.html">Написать</a>
               </section>
               <section class="contacts section">
                 <div class="contacts__border">
-                  <svg class="contacts__border-image" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" width="1150" height="34"><use xlink:href="img/sprite.svg#icon-bg-zigzag-line"></use></svg>
+                  <svg class="contacts__border-image" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" width="1150" height="34"><use xlink:href="#icon-bg-zigzag-line"></use></svg>
                 </div>
-                  <h2 class="contacts__title">Контакты<span class="contacts__title-icon"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" width="46.68" height="81.691"><use xlink:href="img/sprite.svg#icon-flag"></use></svg></span>
+                  <h2 class="contacts__title">Контакты<span class="contacts__title-icon"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" width="46.68" height="81.691"><use xlink:href="#icon-flag"></use></svg></span>
                   </h2>
                   <div class="contacts__wrapper">
                     <div class="contacts__wrapper-row">
-                      <div class="contacts__text">e-mail:</div>
+                      <div class="contacts__text contacts__text-email">e-mail:</div>
                       <div class="contacts__text contacts__text-info"><a class="contacts__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></div>
                     </div>
                     <div class="contacts__wrapper-row contacts__wrapper-row-second">
                         <div class="contacts__text">адрес:</div>
-                        <div class="contacts__text contacts__text-info">г. Санкт-Петербург,<br>
-                          ул. Большая<br class="contacts__br"> Конюшенная,<br>
-                          д. 19/8, офис 101</div>
+                        <div class="contacts__text contacts__text-info contacts__text-adress">г. Санкт-Петербург,
+                          ул. Большая Конюшенная,
+                          д. 19/8, офис 101
+                        </div>
                     </div>
                   </div>
                   <div class="contacts__map">
@@ -188,33 +190,33 @@
           </section>
           <div class="modal modal-overlay"></div>
           <footer class="page-footer">
-              <div class="page-footer__container logo-cont">
-                  <a class="logo page-footer__logo" href="https://htmlacademy.ru/intensive/adaptive"><svg class="footer__logo-image" width="101.615" height="34.056"><use xlink:href="img/sprite.svg#icon-logo-footer"></use></svg></a>
+              <div class="page-footer__container page-footer__logo-cont">
+                  <a class="page-footer__logo" href="https://htmlacademy.ru/intensive/adaptive"><svg class="page-footer__logo-image" width="101.615" height="34.056"><use xlink:href="#icon-logo-footer"></use></svg></a>
               </div>
 
-              <div class="page-footer__container social">
-                  <ul class="social__list">
-                      <li class="social__item"><a class="social-button" href="https://www.instagram.com/?hl=ru">
+              <div class="page-footer__container page-footer__social">
+                  <ul class="page-footer__social-list">
+                      <li class="page-footer__social-item"><a class="page-footer__social-button" href="https://www.instagram.com/?hl=ru">
                             <span class="visually-hidden">Инстаграм</span>
-                            <svg class="social-button-icon" xmlns="http://www.w3.org/2000/svg" width="21.769" height="21.334"><use xlink:href="img/sprite.svg#icon-insta"></use></svg>
+                            <svg class="page-footer__social-button-icon" xmlns="http://www.w3.org/2000/svg" width="21.769" height="21.334"><use xlink:href="#icon-insta"></use></svg>
                         </a>
                       </li>
-                      <li class="social__item"><a class="social-button" href="https://www.facebook.com/campaign/landing.php?campaign_id=1669307470&extra_1=s%7Cc%7C323127629986%7Ce%7C%D1%84%D0%B5%D0%B9%D1%81%D0%B1%D1%83%D0%BA%7C&placement=&creative=323127629986&keyword=%D1%84%D0%B5%D0%B9%D1%81%D0%B1%D1%83%D0%BA&partner_id=googlesem&extra_2=campaignid%3D1669307470%26adgroupid%3D63446529566%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D1t1%26target%3D%26targetid%3Dkwd-300034615170%26loc_physical_ms%3D9047065%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=CjwKCAjwtYXmBRAOEiwAYsyl3DBMDxgQD-iCx0OQ0y83msSntFXyId-5wrC_U65Piv2ONZhjB2Fc1xoCK5AQAvD_BwE">
+                      <li class="page-footer__social-item"><a class="page-footer__social-button" href="https://www.facebook.com/campaign/landing.php?campaign_id=1669307470&extra_1=s%7Cc%7C323127629986%7Ce%7C%D1%84%D0%B5%D0%B9%D1%81%D0%B1%D1%83%D0%BA%7C&placement=&creative=323127629986&keyword=%D1%84%D0%B5%D0%B9%D1%81%D0%B1%D1%83%D0%BA&partner_id=googlesem&extra_2=campaignid%3D1669307470%26adgroupid%3D63446529566%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D1t1%26target%3D%26targetid%3Dkwd-300034615170%26loc_physical_ms%3D9047065%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=CjwKCAjwtYXmBRAOEiwAYsyl3DBMDxgQD-iCx0OQ0y83msSntFXyId-5wrC_U65Piv2ONZhjB2Fc1xoCK5AQAvD_BwE">
                             <span class="visually-hidden"> Фейсбук</span>
-                            <svg class="social-button-icon" xmlns="http://www.w3.org/2000/svg" width="14.962" height="27.718"><use xlink:href="img/sprite.svg#icon-fb"></use></svg>
+                            <svg class="page-footer__social-button-icon" xmlns="http://www.w3.org/2000/svg" width="14.962" height="27.718"><use xlink:href="#icon-fb"></use></svg>
                         </a>
                       </li>
-                      <li class="social__item"><a class="social-button" href="https://twitter.com/home?lang=ru">
+                      <li class="page-footer__social-item"><a class="page-footer__social-button" href="https://twitter.com/home?lang=ru">
                             <span class="visually-hidden">Твиттер</span>
-                            <svg class="social-button-icon" xmlns="http://www.w3.org/2000/svg" width="23.494" height="20.168"><use xlink:href="img/sprite.svg#icon-twitter"></use></svg>
+                            <svg class="page-footer__social-button-icon" xmlns="http://www.w3.org/2000/svg" width="23.494" height="20.168"><use xlink:href="#icon-twitter"></use></svg>
                         </a>
                       </li>
                   </ul>
               </div>
-              <div class="page-footer__container copyright">
-                <a class="copyright__flex copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-                    <p class="copyright__text">Разработано</p>
-                    <span class="copyright__span"><svg class="copyright__span-icon" xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09"><use xlink:href="img/sprite.svg#icon-logo-htmlacademy"></use></svg></span>
+              <div class="page-footer__container page-footer__copyright">
+                <a class="page-footer__copyright-flex page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+                    <p class="page-footer__copyright-text">Разработано</p>
+                    <span class="page-footer__copyright-span"><svg class="page-footer__copyright-span-icon" xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09"><use xlink:href="#icon-logo-htmlacademy"></use></svg></span>
                 </a>
               </div>
           </footer>

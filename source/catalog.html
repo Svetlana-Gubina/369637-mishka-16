@@ -4,8 +4,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>HTML Academy: Мишка</title>
-        <link rel="preload" href="fonts/opensans.woff2" as="font">
-        <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+        <link rel="preload" href="fonts/opensans.woff2" as="font"crossorigin="anonymous">
+        <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
         <link rel="stylesheet" href="css/normalize.min.css">
         <link href="css/style.min.css" rel="stylesheet">
         <script>
@@ -20,26 +20,26 @@
       <div class="wrapper">
         <header class="page-header">
           <nav class="main-nav">
-            <div class="main-nav-flex main-nav-flex-logo">
-                <a class="logo page-header__logo" href="index.html"><svg class="logo__mobile logo__image" xmlns="http://www.w3.org/2000/svg" width="85.589" height="35.034"><use xlink:href="img/sprite.svg#icon-logo-mobile"></use></svg>
-                <svg class="logo__tablet logo__image" xmlns="http://www.w3.org/2000/svg" width="112.389" height="46.087"><use xlink:href="img/sprite.svg#icon-logo-tablet"></use></svg>
-                <svg class="logo__desktop logo__image" xmlns="http://www.w3.org/2000/svg" width="148.051" height="72.707"><use xlink:href="img/sprite.svg#icon-logo-desktop"></use></svg>
+            <div class="main-nav__flex main-nav__flex-logo">
+                <a class="page-header__logo" href="index.html"><svg class="page-header__logo-mobile" xmlns="http://www.w3.org/2000/svg" width="85.589" height="35.034"><use xlink:href="#icon-logo-mobile"></use></svg>
+                <svg class="page-header__logo-tablet" xmlns="http://www.w3.org/2000/svg" width="112.389px" height="46.087"><use xlink:href="#icon-logo-tablet"></use></svg>
+                <svg class="page-header__logo-desktop" xmlns="http://www.w3.org/2000/svg" width="148.051px" height="72.707"><use xlink:href="#icon-logo-desktop"></use></svg>
                 </a>
                 <button class="main-nav__toggle visually-hidden" type="button">Открыть/Закрыть меню</button>
             </div>
-            <div class="main-nav-flex main-nav-flex-tablet">
+            <div class="main-nav__flex main-nav__flex-tablet">
                 <div class="main-nav__item main-nav__item-cat"><a class="main-nav__link">Каталог товаров</a></div>
                 <div class="main-nav__item main-nav__item-order"><a class="main-nav__link" href="form.html">Вязание на заказ</a></div>
             </div>
-            <div class="main-nav-flex main-nav-flex-desktop">
+            <div class="main-nav__flex main-nav__flex-desktop">
                 <div class="main-nav__item main-nav__item-new"><a class="main-nav__link" href="new.html">Новые поступления</a></div>
                 <div class="main-nav__item main-nav__item-sale"><a class="main-nav__link" href="sale.html">Распродажа</a></div>
             </div>
-            <div class="main-nav-flex main-nav-flex-search">
-                <div class="main-nav__item main-nav__item-search"><a class="main-nav__link" href="search.html"><span class="main-nav__search-span"><svg class="main-nav__search-icon" xmlns="http://www.w3.org/2000/svg" width="17.6" height="17.6"><use xlink:href="img/sprite.svg#icon-search"></use></svg></span>Поиск по сайту</a></div>
-                <div class="main-nav__item main-nav__item-cart"><a class="main-nav__link" href="cart.html"><span class="main-nav__cart-span"><svg class="main-nav__cart-icon" xmlns="http://www.w3.org/2000/svg" width="20.294" height="18.849"><use xlink:href="img/sprite.svg#icon-cart"></use></svg></span>Корзина: пока пуста</a></div>
+            <div class="main-nav__flex main-nav__flex-search">
+                <div class="main-nav__item main-nav__item-search"><a class="main-nav__link" href="search.html"><span class="main-nav__search-span"><svg class="main-nav__search-icon" xmlns="http://www.w3.org/2000/svg" width="17.6" height="17.6"><use xlink:href="#icon-search"></use></svg></span>Поиск по сайту</a></div>
+                <div class="main-nav__item main-nav__item-cart"><a class="main-nav__link" href="cart.html"><span class="main-nav__cart-span"><svg class="main-nav__cart-icon" xmlns="http://www.w3.org/2000/svg" width="20.294" height="18.849"><use xlink:href="#icon-cart"></use></svg></span>Корзина: пока пуста</a></div>
             </div>
-            <div class="main-nav-flex main-nav-delivery">
+            <div class="main-nav__flex main-nav__delivery">
                 <span class="main-nav__item-delivery">Бесплатная доставка по России</span>
             </div>
           </nav>
@@ -74,7 +74,7 @@
                           <span class="catalog__item-size">Рост 30 см, вес 200</span>
                           <div class="catalog__item-inner">
                               <p class="catalog__item-price">1 200 руб.</p>
-                              <span class="catalog__item-cart-icon"><svg class="catalog__cart-icon" width="20.294" height="18.849"><use xlink:href="img/sprite.svg#icon-cart"></use></svg>Добавить в корзину</span>
+                              <span class="catalog__item-cart-icon"><svg class="catalog__cart-icon" width="20.294" height="18.849"><use xlink:href="#icon-cart"></use></svg>Добавить в корзину</span>
                           </div>
                         </div>
                     </li>
@@ -98,7 +98,7 @@
                           <span class="catalog__item-size">Диаметр 15 см, высота 10 см</span>
                           <div class="catalog__item-inner">
                               <p class="catalog__item-price">690 руб.</p>
-                              <span class="catalog__item-cart-icon"><svg class="catalog__cart-icon" width="20.294" height="18.849"><use xlink:href="img/sprite.svg#icon-cart"></use></svg>Добавить в корзину</span>
+                              <span class="catalog__item-cart-icon"><svg class="catalog__cart-icon" width="20.294" height="18.849"><use xlink:href="#icon-cart"></use></svg>Добавить в корзину</span>
                           </div>
                         </div>
                     </li>
@@ -123,7 +123,7 @@
                           <span class="catalog__item-size">Диаметр 30 см, высота 30 см</span>
                           <div class="catalog__item-inner">
                               <p class="catalog__item-price">1 500 руб.</p>
-                              <span class="catalog__item-cart-icon"><svg class="catalog__cart-icon" width="20.294" height="18.849"><use xlink:href="img/sprite.svg#icon-cart"></use></svg>Добавить в корзину</span>
+                              <span class="catalog__item-cart-icon"><svg class="catalog__cart-icon" width="20.294" height="18.849"><use xlink:href="#icon-cart"></use></svg>Добавить в корзину</span>
                           </div>
                         </div>
                     </li>
@@ -133,7 +133,7 @@
                   <h2 class="production__title"><span class="production__span"><svg class="production__icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" width="32" height="32"><use xlink:href="img/sprite.svg#icon-video"></use></svg></span>Процесс производства</h2>
 
                   <div class="production__container production__video">
-                      <svg class="production__icon-controls" width="100.678" height="76.891"><use xlink:href="img/sprite.svg#icon-play"></use></svg>
+                      <svg class="production__icon-controls" width="100.678" height="76.891"><use xlink:href="#icon-play"></use></svg>
                       <picture>
                         <source type="image/webp" media="(min-width: 1150px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
                         <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
@@ -173,33 +173,33 @@
           </section>
           <div class="modal modal-overlay"></div>
           <footer class="page-footer">
-            <div class="page-footer__container logo-cont">
-                <a class="logo page-footer__logo" href="https://htmlacademy.ru/intensive/adaptive"><svg class="footer__logo-image" width="101.615" height="34.056"><use xlink:href="img/sprite.svg#icon-logo-footer"></use></svg></a>
+            <div class="page-footer__container page-footer__logo-cont">
+                <a class="page-footer__logo" href="https://htmlacademy.ru/intensive/adaptive"><svg class="page-footer__logo-image" width="101.615" height="34.056"><use xlink:href="#icon-logo-footer"></use></svg></a>
             </div>
 
-            <div class="page-footer__container social">
-                <ul class="social__list">
-                    <li class="social__item"><a class="social-button" href="https://www.instagram.com/?hl=ru">
-                          <span class="visually-hidden">Инстаграм</span>
-                          <svg class="social-button-icon" xmlns="http://www.w3.org/2000/svg" width="21.769" height="21.334"><use xlink:href="img/sprite.svg#icon-insta"></use></svg>
-                      </a>
-                    </li>
-                    <li class="social__item"><a class="social-button" href="https://www.facebook.com/campaign/landing.php?campaign_id=1669307470&extra_1=s%7Cc%7C323127629986%7Ce%7C%D1%84%D0%B5%D0%B9%D1%81%D0%B1%D1%83%D0%BA%7C&placement=&creative=323127629986&keyword=%D1%84%D0%B5%D0%B9%D1%81%D0%B1%D1%83%D0%BA&partner_id=googlesem&extra_2=campaignid%3D1669307470%26adgroupid%3D63446529566%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D1t1%26target%3D%26targetid%3Dkwd-300034615170%26loc_physical_ms%3D9047065%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=CjwKCAjwtYXmBRAOEiwAYsyl3DBMDxgQD-iCx0OQ0y83msSntFXyId-5wrC_U65Piv2ONZhjB2Fc1xoCK5AQAvD_BwE">
-                          <span class="visually-hidden"> Фейсбук</span>
-                          <svg class="social-button-icon" xmlns="http://www.w3.org/2000/svg" width="14.962" height="27.718"><use xlink:href="img/sprite.svg#icon-fb"></use></svg>
-                      </a>
-                    </li>
-                    <li class="social__item"><a class="social-button" href="https://twitter.com/home?lang=ru">
-                          <span class="visually-hidden">Твиттер</span>
-                          <svg class="social-button-icon" xmlns="http://www.w3.org/2000/svg" width="23.494" height="20.168"><use xlink:href="img/sprite.svg#icon-twitter"></use></svg>
-                      </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="page-footer__container copyright">
-              <a class="copyright__flex copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-                  <p class="copyright__text">Разработано</p>
-                  <span class="copyright__span"><svg class="copyright__span-icon" xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09"><use xlink:href="img/sprite.svg#icon-logo-htmlacademy"></use></svg></span>
+            <div class="page-footer__container page-footer__social">
+              <ul class="page-footer__social-list">
+                  <li class="page-footer__social-item"><a class="page-footer__social-button" href="https://www.instagram.com/?hl=ru">
+                        <span class="visually-hidden">Инстаграм</span>
+                        <svg class="page-footer__social-button-icon" xmlns="http://www.w3.org/2000/svg" width="21.769" height="21.334"><use xlink:href="#icon-insta"></use></svg>
+                    </a>
+                  </li>
+                  <li class="page-footer__social-item"><a class="page-footer__social-button" href="https://www.facebook.com/campaign/landing.php?campaign_id=1669307470&extra_1=s%7Cc%7C323127629986%7Ce%7C%D1%84%D0%B5%D0%B9%D1%81%D0%B1%D1%83%D0%BA%7C&placement=&creative=323127629986&keyword=%D1%84%D0%B5%D0%B9%D1%81%D0%B1%D1%83%D0%BA&partner_id=googlesem&extra_2=campaignid%3D1669307470%26adgroupid%3D63446529566%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D1t1%26target%3D%26targetid%3Dkwd-300034615170%26loc_physical_ms%3D9047065%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=CjwKCAjwtYXmBRAOEiwAYsyl3DBMDxgQD-iCx0OQ0y83msSntFXyId-5wrC_U65Piv2ONZhjB2Fc1xoCK5AQAvD_BwE">
+                        <span class="visually-hidden"> Фейсбук</span>
+                        <svg class="page-footer__social-button-icon" xmlns="http://www.w3.org/2000/svg" width="14.962" height="27.718"><use xlink:href="#icon-fb"></use></svg>
+                    </a>
+                  </li>
+                  <li class="page-footer__social-item"><a class="page-footer__social-button" href="https://twitter.com/home?lang=ru">
+                        <span class="visually-hidden">Твиттер</span>
+                        <svg class="page-footer__social-button-icon" xmlns="http://www.w3.org/2000/svg" width="23.494" height="20.168"><use xlink:href="#icon-twitter"></use></svg>
+                    </a>
+                  </li>
+              </ul>
+          </div>
+            <div class="page-footer__container page-footer__copyright">
+              <a class="page-footer__copyright-flex page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+                  <p class="page-footer__copyright-text">Разработано</p>
+                  <span class="page-footer__copyright-span"><svg class="page-footer__copyright-span-icon" xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09"><use xlink:href="#icon-logo-htmlacademy"></use></svg></span>
               </a>
             </div>
         </footer>
