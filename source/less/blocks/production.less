@@ -6,6 +6,21 @@
   margin-bottom: 19%;
   padding: 0;
   border: 1px solid @grey-color;
+
+  &-hover,
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &-focus,
+  &:focus {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &-active,
+  &:active {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .production__button {
@@ -30,6 +45,7 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 1.4;
+  letter-spacing: 1px;
 }
 
 .production__span {
@@ -96,9 +112,10 @@
 
   .production__title {
     order: -1;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     line-height: 1;
+    letter-spacing: 2px;
     margin: 0;
     padding-left: 5.2em;
     padding-top: 2em;
@@ -198,7 +215,7 @@
 
   .production__span {
     top: 25%;
-    left: 22%;
+    left: 20%;
   }
 
   .production__text {
